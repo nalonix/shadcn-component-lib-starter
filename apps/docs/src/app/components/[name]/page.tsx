@@ -1,69 +1,73 @@
-import { Metadata } from "next"
-import { redirect } from "next/navigation"
+import { Metadata } from "next";
+import { redirect } from "next/navigation";
 
-import components from "@/data/components"
+import components from "@/data/components";
+import Component from "@/components/app/Component";
+// import EditThisPage from "@/components/app/EditThisPage";
+// import Pagination from "@/components/app/Pagination";
 
-import Component from "@/components/app/Component"
-// import EditThisPage from "@/components/app/EditThisPage"/
-// import Pagination from "@/components/app/Pagination"
+import { transformToName, transformToSlug } from "@/lib/utils";
 
-import { transformToName, transformToSlug } from "@/lib/utils"
-
-export async function generateStaticParams(): Promise<{ name: string }[]>  {
-  const componentSlugs = components.map((component) => ({
+export async function generateStaticParams(): Promise<{ name: string }[]> {
+  return components.map((component) => ({
     name: transformToSlug(component.name),
-  }))
-
-  return componentSlugs
+  }));
 }
 
-export const dynamicParams = false
+export const dynamicParams = false;
 
 export async function generateMetadata({
   params,
 }: {
-  params: { name: string }
+  params: Promise<{ name: string }>;
 }): Promise<Metadata> {
-  const component = transformToName(params.name)
+  const { name } = await params;
+  const component = transformToName(name);
 
   return {
     title: `${component}`,
     description: `Start using ${component} component in your next project.`,
-  }
+  };
 }
 
-export default async function Installation({
-  params,
-}: {
-  params: { name: string }
-}) {
+interface InstallationProps {
+  params: Promise<{ name: string }>;
+}
+
+export default async function Installation({ params }: InstallationProps) {
+  const { name } = await params;
+
   const currentComponent = components.find(
-    (component) => transformToSlug(component.name) === params.name,
-  )
+    (component) => transformToSlug(component.name) === name
+  );
 
   if (!currentComponent) {
-    redirect("/docs/installation")
+    redirect("/docs/installation");
   }
 
   const docsLink = !currentComponent.notShadcn
     ? `https://ui.shadcn.com/docs/components/${transformToSlug(
-        currentComponent.name,
+        currentComponent.name
       )}`
-    : undefined
+    : undefined;
 
   return (
     <>
       <Component
         name={currentComponent.name}
-        exampleComponent={<currentComponent.exampleComponent />}
+        exampleComponent={
+          currentComponent.exampleComponent ? (
+            <currentComponent.exampleComponent />
+          ) : null
+        }
         docsLink={docsLink}
       />
 
-      <currentComponent.markdown />
+      {currentComponent.markdown ? <currentComponent.markdown /> : null}
 
       {/* <EditThisPage
         markdownPath={`/components/${transformToSlug(
-          currentComponent.name,
+          currentComponent.name
         )}.mdx`}
       /> */}
 
@@ -71,7 +75,7 @@ export default async function Installation({
         prev={
           currentComponent.prevComponent
             ? {
-                name: `${transformToName(currentComponent.prevComponent)}`,
+                name: transformToName(currentComponent.prevComponent),
                 path: `/components/${currentComponent.prevComponent}`,
               }
             : undefined
@@ -79,12 +83,12 @@ export default async function Installation({
         next={
           currentComponent.nextComponent
             ? {
-                name: `${transformToName(currentComponent.nextComponent)}`,
+                name: transformToName(currentComponent.nextComponent),
                 path: `/components/${currentComponent.nextComponent}`,
               }
             : undefined
         }
       /> */}
     </>
-  )
+  );
 }
