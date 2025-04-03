@@ -9,7 +9,7 @@ import Component from "@/components/app/Component"
 
 import { transformToName, transformToSlug } from "@/lib/utils"
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<{ name: string }[]>  {
   const componentSlugs = components.map((component) => ({
     name: transformToSlug(component.name),
   }))
