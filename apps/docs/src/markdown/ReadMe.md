@@ -1,0 +1,1 @@
+All mdx files are here. They will be imported from ```/app```

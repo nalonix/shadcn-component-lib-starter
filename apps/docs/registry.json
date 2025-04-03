@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "acme",
+  "homepage": "https://acme.com",
+  "items": [
+    {
+      "name": "mybutton",
+      "title": "Button component (CSS Variables variant)",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-slot"
+      ],
+      "files": [
+        {
+          "path": "registry/default/mybutton/mybutton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}
