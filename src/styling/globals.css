@@ -64,6 +64,7 @@
   --font-weight-base: var(--base-font-weight);
   --font-weight-heading: var(--heading-font-weight);
 
+  /* maybe remove  */
   --animate-marquee: marquee 5s linear infinite;
   --animate-marquee2: marquee2 5s linear infinite;
 

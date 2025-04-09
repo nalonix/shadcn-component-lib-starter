@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@devnomic/marquee':
-    specifier: ^1.0.2
-    version: 1.0.3(@types/react-dom@19.0.4)(@types/react@19.0.10)(react-dom@19.0.0)(react@19.0.0)
   '@hookform/resolvers':
     specifier: ^3.3.4
     version: 3.10.0(react-hook-form@7.55.0)
@@ -492,22 +489,6 @@ packages:
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
-    dev: false
-
-  /@devnomic/marquee@1.0.3(@types/react-dom@19.0.4)(@types/react@19.0.10)(react-dom@19.0.0)(react@19.0.0):
-    resolution: {integrity: sha512-q8QUtNO8ff+UvfrKJsHBtxh4fbOfhGk6SSdK0Uu/XZFdEzrmiGJ/l0FuVHRYsPAmzgnhVVnz1dGNB5CWGLMVvw==}
-    peerDependencies:
-      '@types/react': ^18.2.47
-      '@types/react-dom': ^18.2.18
-      react: ^18.2.0
-      react-dom: ^18.2.0
-    dependencies:
-      '@types/react': 19.0.10
-      '@types/react-dom': 19.0.4(@types/react@19.0.10)
-      clsx: 2.1.1
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-      tailwind-merge: 2.6.0
     dev: false
 
   /@emnapi/core@1.4.0:
@@ -7286,10 +7267,6 @@ packages:
   /supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
-    dev: false
-
-  /tailwind-merge@2.6.0:
-    resolution: {integrity: sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA==}
     dev: false
 
   /tailwind-merge@3.2.0:

@@ -53,7 +53,6 @@ import InputFileDemo from "@/examples/ui/input/file"
 import InputWithButtonDemo from "@/examples/ui/input/with-button"
 import InputWithLabelDemo from "@/examples/ui/input/with-label"
 import LabelDemo from "@/examples/ui/label"
-import MarqueeDemo from "@/examples/ui/marquee"
 import MenubarDemo from "@/examples/ui/menubar"
 import NavigationMenuDemo from "@/examples/ui/navigation-menu"
 import PaginationDemo from "@/examples/ui/pagination"
@@ -258,11 +257,6 @@ const COMPONENTS: Component[] = [
   {
     name: "Label",
     exampleComponent: LabelDemo,
-  },
-  {
-    name: "Marquee",
-    exampleComponent: MarqueeDemo,
-    notShadcn: true,
   },
   {
     name: "Menubar",
