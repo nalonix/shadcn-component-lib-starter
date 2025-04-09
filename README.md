@@ -1,4 +1,4 @@
-# Neobrutalism components
+# Shadcn Component Liabrary Starter
 
 <!-- <img src="public/preview.png" alt="preview"> -->
 
