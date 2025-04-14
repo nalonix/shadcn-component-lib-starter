@@ -1,5 +1,5 @@
 import components from "@/data/components"
-import { STARS_EXAMPLES } from "@/data/stars"
+// import { STARS_EXAMPLES } from "@/data/stars"
 
 import { transformToSlug } from "@/lib/utils"
 
@@ -20,24 +20,19 @@ export default function ComponentPreview({
 
   let ExampleComponent: React.ComponentType | undefined
 
-  if (type === "star") {
-    const starData = STARS_EXAMPLES[component as keyof typeof STARS_EXAMPLES]
-    if (!starData) return null
 
-    ExampleComponent = starData
-  } else {
-    const componentData = components.find(
-      (c) => transformToSlug(c.name) === component,
-    )
+  const componentData = components.find(
+    (c) => transformToSlug(c.name) === component,
+  )
 
-    if (!componentData) return null
+  if (!componentData) return null
 
-    if (type === "component") {
-      ExampleComponent = example
-        ? componentData.examples?.[example]
-        : componentData.exampleComponent
-    }
+  if (type === "component") {
+    ExampleComponent = example
+      ? componentData.examples?.[example]
+      : componentData.exampleComponent
   }
+
 
   if (!ExampleComponent) return null
 

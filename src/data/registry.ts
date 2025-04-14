@@ -6,7 +6,7 @@ const UI = [
     dependencies: ["@radix-ui/react-accordion"],
     files: [
       {
-        path: "src/components/ui/accordion.tsx",
+        path: "registry/default/ui/accordion.tsx",
         type: "registry:ui",
       },
     ],
@@ -17,7 +17,7 @@ const UI = [
     type: "registry:ui",
     files: [
       {
-        path: "src/components/ui/alert.tsx",
+        path: "registry/default/ui/alert.tsx",
         type: "registry:ui",
       },
     ],
@@ -27,10 +27,10 @@ const UI = [
     title: "Alert dialog",
     type: "registry:ui",
     dependencies: ["@radix-ui/react-alert-dialog"],
-    registryDependencies: ["https://neobrutalism.dev/r/nbutton.json"],
+    registryDependencies: ["button"],
     files: [
       {
-        path: "src/components/ui/alert-dialog.tsx",
+        path: "registry/default/ui/alert-dialog.tsx",
         type: "registry:ui",
       },
     ],
@@ -42,7 +42,7 @@ const UI = [
     dependencies: ["@radix-ui/react-avatar"],
     files: [
       {
-        path: "src/components/ui/avatar.tsx",
+        path: "registry/default/ui/avatar.tsx",
         type: "registry:ui",
       },
     ],
@@ -53,7 +53,7 @@ const UI = [
     type: "registry:ui",
     files: [
       {
-        path: "src/components/ui/badge.tsx",
+        path: "registry/default/ui/badge.tsx",
         type: "registry:ui",
       },
     ],
@@ -65,18 +65,7 @@ const UI = [
     dependencies: ["@radix-ui/react-slot"],
     files: [
       {
-        path: "src/components/ui/breadcrumb.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "nbutton",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-slot"],
-    files: [
-      {
-        path: "src/components/ui/button.tsx",
+        path: "registry/default/ui/breadcrumb.tsx",
         type: "registry:ui",
       },
     ],
@@ -88,7 +77,7 @@ const UI = [
     dependencies: ["@radix-ui/react-slot"],
     files: [
       {
-        path: "src/components/ui/mybutton.tsx",
+        path: "registry/default/ui/mybutton.tsx",
         type: "registry:ui",
       },
     ],
@@ -100,7 +89,7 @@ const UI = [
     dependencies: ["@radix-ui/react-slot"],
     files: [
       {
-        path: "src/components/ui/button.tsx",
+        path: "registry/default/ui/button.tsx",
         type: "registry:ui",
       },
     ],
@@ -110,7 +99,7 @@ const UI = [
     title: "Calendar",
     type: "registry:ui",
     dependencies: ["react-day-picker@8.10.1", "date-fns"],
-    registryDependencies: ["https://neobrutalism.dev/r/nbutton.json"],
+    registryDependencies: ["button"],
     files: [
       {
         path: "src/components/ui/calendar.tsx",
@@ -124,7 +113,7 @@ const UI = [
     type: "registry:ui",
     files: [
       {
-        path: "src/components/ui/card.tsx",
+        path: "registry/default/ui/card.tsx",
         type: "registry:ui",
       },
     ],
@@ -134,10 +123,10 @@ const UI = [
     title: "Carousel",
     type: "registry:ui",
     dependencies: ["embla-carousel-react"],
-    registryDependencies: ["https://neobrutalism.dev/r/nbutton.json"],
+    registryDependencies: ["button"],
     files: [
       {
-        path: "src/components/ui/carousel.tsx",
+        path: "registry/default/ui/carousel.tsx",
         type: "registry:ui",
       },
     ],
@@ -149,7 +138,7 @@ const UI = [
     dependencies: ["@radix-ui/react-checkbox"],
     files: [
       {
-        path: "src/components/ui/checkbox.tsx",
+        path: "registry/default/ui/checkbox.tsx",
         type: "registry:ui",
       },
     ],
