@@ -4,7 +4,7 @@ import { CircleAlert } from "lucide-react"
 import * as runtime from "react/jsx-runtime"
 import Link from "next/link"
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { Alert, AlertDescription, AlertTitle } from "@/registry/default/ui/alert"
 import {
   Table,
   TableBody,
@@ -12,8 +12,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+} from "@/registry/default/ui/table"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/registry/default/ui/tabs"
 
 import { cn } from "@/lib/utils"
 

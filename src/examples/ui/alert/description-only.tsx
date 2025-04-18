@@ -1,4 +1,4 @@
-import { Alert, AlertDescription } from "@/components/ui/alert"
+import { Alert, AlertDescription } from "@/registry/default/ui/alert"
 
 export default function AlertDescriptionOnlyDemo() {
   return (

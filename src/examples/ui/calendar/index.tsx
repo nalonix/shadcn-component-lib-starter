@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-import { Calendar } from "@/components/ui/calendar"
+import { Calendar } from "@/registry/default/ui/calendar"
 
 export default function CalendarDemo() {
   const [date, setDate] = useState<Date | undefined>(new Date())

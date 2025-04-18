@@ -10,7 +10,7 @@ import { MAIN_SIDEBAR } from "@/data/sidebar-links"
 import { MDXContent, MDXTableOfContents } from "@/components/app/mdx-components"
 import Pagination from "@/components/app/pagination"
 import { TableOfContents } from "@/components/app/toc"
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/registry/default/ui/badge"
 
 interface DocPageProps {
   params: Promise<{

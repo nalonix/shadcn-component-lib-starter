@@ -1,5 +1,4 @@
 // TODO: remove this component 
-import { Marquee } from "@devnomic/marquee"
 import { ChevronsUpDown, Terminal } from "lucide-react"
 
 import * as React from "react"
@@ -9,8 +8,8 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+} from "@/registry/default/ui/accordion"
+import { Alert, AlertDescription, AlertTitle } from "@/registry/default/ui/alert"
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -18,8 +17,8 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
-import { Button } from "@/components/ui/button"
+} from "@/registry/default/ui/breadcrumb"
+import { Button } from "@/registry/default/ui/button"
 import {
   Card,
   CardContent,
@@ -27,36 +26,36 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/registry/default/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
-import { Checkbox } from "@/components/ui/checkbox"
+} from "@/registry/default/ui/carousel"
+import { Checkbox } from "@/registry/default/ui/checkbox"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/components/ui/collapsible"
-import { Input } from "@/components/ui/input"
+} from "@/registry/default/ui/collapsible"
+import { Input } from "@/registry/default/ui/input"
 import {
   InputOTP,
   InputOTPGroup,
   InputOTPSeparator,
   InputOTPSlot,
-} from "@/components/ui/input-otp"
-import { Label } from "@/components/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+} from "@/registry/default/ui/input-otp"
+import { Label } from "@/registry/default/ui/label"
+import { RadioGroup, RadioGroupItem } from "@/registry/default/ui/radio-group"
 import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/components/ui/resizable"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { Slider } from "@/components/ui/slider"
+} from "@/registry/default/ui/resizable"
+import { ScrollArea } from "@/registry/default/ui/scroll-area"
+import { Slider } from "@/registry/default/ui/slider"
 
 import { cn } from "@/lib/utils"
 
@@ -75,24 +74,6 @@ export default function HeroComponents({
         className,
       )}
     >
-      <Marquee
-        direction="up"
-        reverse={reverse}
-        className="flex flex-col w-full max-w-full h-full overflow-hidden pr-3 [&>*]:gap-[20px]"
-      >
-        <CardExample />
-        <AlertExample />
-        <AccordionExample />
-        <InputOTPExample />
-        <ResizableExample />
-        <ScrollAreaExample />
-        <SliderExample />
-        <BreadcrumbExample />
-        <RadioGroupExample />
-        <CheckboxExample />
-        <CarouselExample />
-        <CollapsibleExample />
-      </Marquee>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 
 import Link from "next/link"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/registry/default/ui/button"
 
 type Props = {
   prev?: {

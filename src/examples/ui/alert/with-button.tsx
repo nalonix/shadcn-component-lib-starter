@@ -1,7 +1,7 @@
 import { CheckCircle2Icon } from "lucide-react"
 
-import { Alert, AlertTitle } from "@/components/ui/alert"
-import { Button } from "@/components/ui/button"
+import { Alert, AlertTitle } from "@/registry/default/ui/alert"
+import { Button } from "@/registry/default/ui/button"
 
 export default function AlertLongDescriptionDemo() {
   return (

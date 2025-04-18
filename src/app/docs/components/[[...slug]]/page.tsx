@@ -10,7 +10,7 @@ import { MAIN_SIDEBAR } from "@/data/sidebar-links"
 import { MDXContent, MDXTableOfContents } from "@/components/app/mdx-components"
 import Pagination from "@/components/app/pagination"
 import { TableOfContents } from "@/components/app/toc"
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/registry/default/ui/badge"
 
 interface DocPageProps {
   params: Promise<{
@@ -36,7 +36,11 @@ export async function generateStaticParams(): Promise<
 
 async function getDocFromParams({ params }: DocPageProps) {
   const slug = (await params).slug?.join("/") || ""
-  const doc = docs.find((doc) => doc.slugAsParams === slug)
+  docs.forEach((ele)=> console.log(ele.title))
+  const doc = docs.find((doc) => {
+    // console.log(doc.slugAsParams, slug)
+    return doc.slugAsParams === slug
+  })
 
   if (!doc) {
     return null

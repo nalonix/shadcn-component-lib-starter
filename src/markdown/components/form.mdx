@@ -12,7 +12,7 @@ shadcnDocsLink: https://ui.shadcn.com/docs/components/form
 ## Installation
 
 <Installation component="form">
-  ```tsx file=<rootDir>/src/components/ui/form.tsx
+  ```tsx file=<rootDir>/src/registry/default/ui/form.tsx
   ```
 </Installation>
 
@@ -23,7 +23,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@/registry/default/ui/button'
 import {
   Form,
   FormControl,
@@ -32,8 +32,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
-import { Input } from '@/components/ui/input'
+} from '@/registry/default/ui/form'
+import { Input } from '@/registry/default/ui/input'
 ```
 
 ```ts

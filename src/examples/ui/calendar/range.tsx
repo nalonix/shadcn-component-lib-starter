@@ -5,7 +5,7 @@ import { DateRange } from "react-day-picker"
 
 import * as React from "react"
 
-import { Calendar } from "@/components/ui/calendar"
+import { Calendar } from "@/registry/default/ui/calendar"
 
 export default function CalendarRangeDemo() {
   const [dateRange, setDateRange] = React.useState<DateRange | undefined>({

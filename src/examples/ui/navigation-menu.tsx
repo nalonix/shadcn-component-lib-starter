@@ -11,7 +11,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+} from "@/registry/default/ui/navigation-menu"
 
 import { cn } from "@/lib/utils"
 

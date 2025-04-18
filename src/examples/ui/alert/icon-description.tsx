@@ -1,6 +1,6 @@
 import { BookmarkCheckIcon } from "lucide-react"
 
-import { Alert, AlertDescription } from "@/components/ui/alert"
+import { Alert, AlertDescription } from "@/registry/default/ui/alert"
 
 export default function AlertIconDescriptionDemo() {
   return (

@@ -1,6 +1,6 @@
 import { MoreHorizontalIcon } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/registry/default/ui/button"
 
 export default function ButtonIconDemo() {
   return (

@@ -1,11 +1,11 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/registry/default/ui/card"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/registry/default/ui/carousel"
 
 export default function CarouselDemo() {
   return (

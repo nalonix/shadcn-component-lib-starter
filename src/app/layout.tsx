@@ -7,7 +7,7 @@ import Navbar from "@/components/app/navbar"
 import ScrollToTop from "@/components/app/scroll-to-top"
 import SetStylingPref from "@/components/app/set-styling-pref"
 import { ThemeProvider } from "@/components/app/theme-provider"
-import { Toaster } from "@/components/ui/sonner"
+import { Toaster } from "@/registry/default/ui/sonner"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],

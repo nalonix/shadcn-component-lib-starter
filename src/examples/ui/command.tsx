@@ -20,7 +20,7 @@ import {
   CommandList,
   CommandSeparator,
   CommandShortcut,
-} from "@/components/ui/command"
+} from "@/registry/default/ui/command"
 
 export default function CommandDemo() {
   const [open, setOpen] = React.useState(false)

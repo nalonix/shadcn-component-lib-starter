@@ -1,6 +1,6 @@
 import { ShieldAlertIcon } from "lucide-react"
 
-import { Alert, AlertTitle } from "@/components/ui/alert"
+import { Alert, AlertTitle } from "@/registry/default/ui/alert"
 
 export default function AlertLongTitleDemo() {
   return (

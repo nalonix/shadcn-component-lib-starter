@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/registry/default/ui/remove_accordion"
 
 export default function AccordionDemo() {
   return (

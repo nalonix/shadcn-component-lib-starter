@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation"
 
 import { COMPONENTS_LINKS, GETTING_STARTED_LINKS } from "@/data/sidebar-links"
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/registry/default/ui/button"
 import {
   CommandDialog,
   CommandEmpty,
@@ -16,7 +16,7 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from "@/components/ui/command"
+} from "@/registry/default/ui/command"
 
 export default function Search() {
   const DOCS_LINKS = [

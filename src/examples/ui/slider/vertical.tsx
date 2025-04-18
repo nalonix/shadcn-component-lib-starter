@@ -1,6 +1,6 @@
 "use client"
 
-import { Slider } from "@/components/ui/slider"
+import { Slider } from "@/registry/default/ui/slider"
 
 export default function VerticalSliderDemo() {
   return (
