@@ -1,3 +1,4 @@
+import Navbar from "@/components/app/navbar"
 import Sidebar from "@/components/app/sidebar"
 
 export default function MainDocsLayout({
@@ -7,6 +8,7 @@ export default function MainDocsLayout({
 }) {
   return (
     <>
+      <Navbar />
       <Sidebar />
       {children}
     </>

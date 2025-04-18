@@ -1,6 +1,9 @@
+import PokemonsDemo from "@/examples/blocks/pokemons"
+
 type Block = {
   name: string
-  exampleComponent?: React.ComponentType
+  description?: string
+  previewComponent?: React.ComponentType
   notShadcn?: boolean
   status: "stable" | "experimental" | "deprecated" | "unpublished"
   createdAt: string
@@ -9,10 +12,13 @@ type Block = {
 
 const BLOCKS: Block[] = [
   {
-    name: "Pokemons",
+    name: "pokemons",
+    description: "A list of pokemons",
+    previewComponent: PokemonsDemo,
     createdAt: "4-14-2024",
     updatedAt: "4-14-2025",
     status: "experimental",
+    notShadcn: true,
   },
 ]
 

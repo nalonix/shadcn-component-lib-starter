@@ -64,7 +64,6 @@ export default function RootLayout({
           defaultTheme="light"
           disableTransitionOnChange
         >
-          <Navbar />
           {children}
           <SetStylingPref />
           <ScrollToTop />

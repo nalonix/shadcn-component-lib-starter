@@ -47,7 +47,7 @@ async function Navbar() {
 
             <Link href="/docs/components/accordion">Components</Link>
 
-            <Link href="/docs/blocks/login">Blocks</Link>
+            <Link href="/docs/blocks/pokemons">Blocks</Link>
 
             <Link href="/styling">Styling</Link>
 

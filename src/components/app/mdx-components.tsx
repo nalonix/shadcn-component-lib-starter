@@ -18,6 +18,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { cn } from "@/lib/utils"
 
 import ComponentPreview from "./component-preview"
+import BlockPreview from "./block-preview"
 import { Pre } from "./pre"
 import ShadcnCliCommand from "./shadcn-cli-command"
 
@@ -80,6 +81,7 @@ export const sharedComponents = {
   pre: Pre,
   ShadcnCliCommand,
   ComponentPreview,
+  BlockPreview,
   Installation: ({
     children,
     component,

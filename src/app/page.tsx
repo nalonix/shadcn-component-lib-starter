@@ -1,3 +1,4 @@
+import Navbar from "@/components/app/navbar"
 import { ArrowUpRight } from "lucide-react"
 
 import Link from "next/link"

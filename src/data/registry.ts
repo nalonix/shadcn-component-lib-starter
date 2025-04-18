@@ -6,7 +6,7 @@ const UI = [
     dependencies: ["@radix-ui/react-accordion"],
     files: [
       {
-        path: "registry/default/ui/accordion.tsx",
+        path: "src/registry/default/ui/accordion.tsx",
         type: "registry:ui",
       },
     ],
@@ -17,7 +17,7 @@ const UI = [
     type: "registry:ui",
     files: [
       {
-        path: "registry/default/ui/alert.tsx",
+        path: "src/registry/default/ui/alert.tsx",
         type: "registry:ui",
       },
     ],
@@ -30,7 +30,7 @@ const UI = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "registry/default/ui/alert-dialog.tsx",
+        path: "src/registry/default/ui/alert-dialog.tsx",
         type: "registry:ui",
       },
     ],
@@ -42,7 +42,7 @@ const UI = [
     dependencies: ["@radix-ui/react-avatar"],
     files: [
       {
-        path: "registry/default/ui/avatar.tsx",
+        path: "src/registry/default/ui/avatar.tsx",
         type: "registry:ui",
       },
     ],
@@ -53,7 +53,7 @@ const UI = [
     type: "registry:ui",
     files: [
       {
-        path: "registry/default/ui/badge.tsx",
+        path: "src/registry/default/ui/badge.tsx",
         type: "registry:ui",
       },
     ],
@@ -65,7 +65,7 @@ const UI = [
     dependencies: ["@radix-ui/react-slot"],
     files: [
       {
-        path: "registry/default/ui/breadcrumb.tsx",
+        path: "src/registry/default/ui/breadcrumb.tsx",
         type: "registry:ui",
       },
     ],
@@ -77,7 +77,7 @@ const UI = [
     dependencies: ["@radix-ui/react-slot"],
     files: [
       {
-        path: "registry/default/ui/mybutton.tsx",
+        path: "src/registry/default/ui/mybutton.tsx",
         type: "registry:ui",
       },
     ],
@@ -89,7 +89,7 @@ const UI = [
     dependencies: ["@radix-ui/react-slot"],
     files: [
       {
-        path: "registry/default/ui/button.tsx",
+        path: "src/registry/default/ui/button.tsx",
         type: "registry:ui",
       },
     ],
@@ -113,7 +113,7 @@ const UI = [
     type: "registry:ui",
     files: [
       {
-        path: "registry/default/ui/card.tsx",
+        path: "src/registry/default/ui/card.tsx",
         type: "registry:ui",
       },
     ],
@@ -126,7 +126,7 @@ const UI = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "registry/default/ui/carousel.tsx",
+        path: "src/registry/default/ui/carousel.tsx",
         type: "registry:ui",
       },
     ],
@@ -138,7 +138,7 @@ const UI = [
     dependencies: ["@radix-ui/react-checkbox"],
     files: [
       {
-        path: "registry/default/ui/checkbox.tsx",
+        path: "src/registry/default/ui/checkbox.tsx",
         type: "registry:ui",
       },
     ],
@@ -533,6 +533,41 @@ const UI = [
   },
 ]
 
-const REGISTRY = [...UI]
+const BLOCKS = [
+  {
+    name: "pokemons",
+    title: "Pokemons",
+    description: "A list of pokemons",
+    type: "registry:block",
+    registryDependencies: ["button"],
+    dependencies: ["zod"],
+    files: [
+      {
+        path: "src/registry/default/blocks/pokemons/page.tsx",
+        type: "registry:page",
+        target: "app/pokemons/page.tsx",
+      },
+      {
+        path: "src/registry/default/blocks/pokemons/components/pokemon-card.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "src/registry/default/blocks/pokemons/components/pokemon-image.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "src/registry/default/blocks/pokemons/lib/pokemon.ts",
+        type: "registry:lib",
+      },
+      {
+        path: "src/registry/default/blocks/pokemons/hooks/use-pokemon.ts",
+        type: "registry:hook",
+      },
+    ],
+    categories: ["dashboard"],
+  },
+]
+
+const REGISTRY = [...UI, ...BLOCKS]
 
 export default REGISTRY

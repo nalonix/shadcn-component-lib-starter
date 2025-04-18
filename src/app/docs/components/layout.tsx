@@ -1,5 +1,6 @@
 import Sidebar from "@/components/app/sidebar"
 
+// TODO: please upate layout function names
 export default function MainDocsLayout({
   children,
 }: {
@@ -7,7 +8,7 @@ export default function MainDocsLayout({
 }) {
   return (
     <>
-      <Sidebar />
+      {/* <Sidebar /> */}
       {children}
     </>
   )
