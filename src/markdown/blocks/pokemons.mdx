@@ -1,8 +1,7 @@
 ---
 title: Pokemons
-description: A page that shows a grid of randomly fetched pokemons
+description: A block that displays a grid of Pokémon cards
 ---
-
 
 <BlockPreview component="pokemons">
   ```tsx file=<rootDir>/src/examples/blocks/pokemons.tsx
@@ -11,11 +10,55 @@ description: A page that shows a grid of randomly fetched pokemons
 
 ## Installation
 
-<Installation component="accordion">
-  ```tsx file=<rootDir>/src/registry/default/ui/accordion.tsx
-  ```
+<Installation component="pokemons">
+        /pokemons/page.tsx
+        ```tsx file=<rootDir>/src/registry/default/blocks/pokemons/page.tsx
+        ```
+
+        /hooks/use-pokemon.tsx
+        ```tsx file=<rootDir>/src/registry/default/blocks/pokemons/hooks/use-pokemon.ts
+        ```
+        /lib/pokemon.ts
+        ```tsx file=<rootDir>/src/registry/default/blocks/pokemons/lib/pokemon.ts
+        ```
+        /components/pokemon-card.tsx
+        ```tsx file=<rootDir>/src/registry/default/blocks/pokemons/components/pokemon-card.tsx
+        ```
+        /components/pokemon-image.tsx
+        ```tsx file=<rootDir>/src/registry/default/blocks/pokemons/components/pokemon-image.tsx
+        ```
+
+  {/* <Tabs defaultValue="cli" className="w-full">
+      <TabsList className="flex flex-col h-96 w-full border-0">
+        <TabsTrigger value="page" className="border-0 w-full">
+          /pokemon/page.tsx
+        </TabsTrigger>
+        <TabsTrigger value="hooks" className="border-0 w-full">
+          /hooks/use-pokemon.ts
+        </TabsTrigger>
+        <TabsTrigger value="lib" className="border-0 w-full">
+          /lib/pokemon.ts
+        </TabsTrigger>
+        <TabsTrigger value="components" className="border-0 w-full">
+          /components/pokemon-card.tsx
+        </TabsTrigger>
+      </TabsList>
+      <TabsContent value="page">
+        ```tsx file=<rootDir>/src/registry/default/blocks/pokemons/page.tsx
+        ```
+      </TabsContent>
+      <TabsContent value="hooks">
+        ```tsx file=<rootDir>/src/registry/default/blocks/pokemons/hooks/use-pokemon.ts
+        ```
+      </TabsContent>
+      <TabsContent value="lib">
+        ```tsx file=<rootDir>/src/registry/default/blocks/pokemons/lib/pokemon.ts
+        ```
+      </TabsContent>
+      <TabsContent value="components">
+        ```tsx file=<rootDir>/src/registry/default/blocks/pokemons/components/pokemon-card.tsx
+        ```
+      </TabsContent>
+    </Tabs> */}
 </Installation>
 
-## Usage
-
-A usage guide

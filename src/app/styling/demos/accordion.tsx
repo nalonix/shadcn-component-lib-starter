@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/registry/default/ui/remove_accordion"
+} from "@/registry/default/ui/accordion"
 
 export default function AccordionDemo() {
   return (
@@ -11,7 +11,7 @@ export default function AccordionDemo() {
       type="single"
       collapsible
       defaultValue="item-1"
-      className="w-full"
+      className="flex flex-col gap-y-1 w-full "
     >
       <AccordionItem value="item-1">
         <AccordionTrigger>Is it accessible?</AccordionTrigger>
