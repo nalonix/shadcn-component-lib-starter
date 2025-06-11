@@ -15,6 +15,9 @@ const dmSans = DM_Sans({
   adjustFontFallback: false,
 })
 
+
+const BASE_URL = process.env.BASE_URL
+
 export const metadata: Metadata = {
   title: {
     default:
@@ -36,17 +39,17 @@ export const metadata: Metadata = {
     type: "website",
     description:
       "starter pack for creating a component liabrary using shadcn/ui.",
-    images: ["https://www.neobrutalism.dev/preview.png"],
-    url: "https://www.neobrutalism.dev/",
+    images: [`${BASE_URL}/preview.png`],
+    url: `${BASE_URL}/`,
     title: "Component Libarary Starter",
   },
-  metadataBase: new URL("https://www.neobrutalism.dev/"),
+  metadataBase: new URL(`${BASE_URL}/`),
   twitter: {
     card: "summary_large_image",
     title: "Component Liabrary Starter - Starter pack for shadcn ui based component liabrary",
     description:
       "A starter pack for creating a component liabrary using shadcn/ui",
-    images: ["https://www.neobrutalism.dev/preview.png"],
+    images: [`${BASE_URL}/preview.png`],
     creator: "@nalonix_",
   },
 }

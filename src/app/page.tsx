@@ -3,8 +3,6 @@ import { ArrowUpRight } from "lucide-react"
 
 import Link from "next/link"
 
-// import StylingCustomizer from "@/components/app/styling-customizer"
-
 export default function Home() {
 
   return (

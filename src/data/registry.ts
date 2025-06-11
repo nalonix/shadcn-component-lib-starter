@@ -1,3 +1,5 @@
+const BASE_URL = process.env.BASE_URL
+
 const UI = [
   {
     name: "accordion",
@@ -160,7 +162,7 @@ const UI = [
     title: "Command",
     type: "registry:ui",
     dependencies: ["cmdk"],
-    registryDependencies: ["https://neobrutalism.dev/r/ndialog.json"],
+    registryDependencies: [`${BASE_URL}/r/ndialog.json`],
     files: [
       {
         path: "src/components/ui/command.tsx",
@@ -239,8 +241,8 @@ const UI = [
       "react-hook-form",
     ],
     registryDependencies: [
-      "https://neobrutalism.dev/r/nbutton.json",
-      "https://neobrutalism.dev/r/nlabel.json",
+      "${BASE_URL}/r/nbutton.json",
+      "${BASE_URL}/r/nlabel.json",
     ],
     files: [
       {
@@ -346,7 +348,7 @@ const UI = [
     name: "pagination",
     title: "Pagination",
     type: "registry:ui",
-    registryDependencies: ["https://neobrutalism.dev/r/nbutton.json"],
+    registryDependencies: ["${BASE_URL}/r/nbutton.json"],
     files: [
       {
         path: "src/components/ui/pagination.tsx",

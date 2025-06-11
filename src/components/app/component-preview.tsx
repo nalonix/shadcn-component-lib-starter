@@ -14,7 +14,7 @@ export default function ComponentPreview({
   component: string
   children: React.ReactNode
   example?: string
-  type?: "star" | "component"
+  type?: "component"
 }) {
   const { Tabs, TabsList, TabsTrigger, TabsContent } = sharedComponents
 

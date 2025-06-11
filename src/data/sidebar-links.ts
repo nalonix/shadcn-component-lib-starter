@@ -19,10 +19,6 @@ const BLOCKS_LINKS = BLOCKS.map((block) => {
 
 const GETTING_STARTED_LINKS = [
   {
-    href: "/docs/migrating-from-v3",
-    text: "Migrating from V3",
-  },
-  {
     href: "/docs",
     text: "Introduction",
   },
@@ -57,11 +53,14 @@ const MAIN_SIDEBAR = [
   ...BLOCKS_LINKS,
 ]
 
+// TODO: Either make Blocks' paths with in /components or revert to spliting cmpts and blocksl links
 const COMPONENTS_SIDEBAR = [
   "Getting started",
   ...GETTING_STARTED_LINKS,
   "Components",
   ...COMPONENTS_LINKS,
+  "Blocks",
+  ...BLOCKS_LINKS,
 ]
 
 const BLOCKS_SIDEBAR = [

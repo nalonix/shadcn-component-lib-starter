@@ -85,11 +85,14 @@ export const sharedComponents = {
   Installation: ({
     children,
     component,
+    type = "component",
   }: {
-    children: React.ReactNode
+    children?: React.ReactNode
     component: string
-  }) => (
-    <sharedComponents.Tabs defaultValue="cli" className="w-full">
+    type: "component" | "block"
+  }) => {
+    if(type == "component"){
+      return (<sharedComponents.Tabs defaultValue="cli" className="w-full">
       <sharedComponents.TabsList className="grid w-full grid-cols-2 border-b-0">
         <sharedComponents.TabsTrigger value="cli">
           Shadcn CLI
@@ -104,8 +107,17 @@ export const sharedComponents = {
       <sharedComponents.TabsContent value="manual">
         {children}
       </sharedComponents.TabsContent>
-    </sharedComponents.Tabs>
-  ),
+    </sharedComponents.Tabs>)
+    }else if(type == "block"){
+      return  (
+      <div>
+        <div className="p-2.5 text-lg font-bold bg-secondary-background shadow-shadow border-2 border-border">
+            Shadcn CLI
+        </div>
+        <ShadcnCliCommand component={component} />
+      </div>)
+    }
+    },
   Table,
   TableBody,
   TableCell,

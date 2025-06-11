@@ -12,7 +12,7 @@ import Styling from "./styling"
 
 export const metadata: Metadata = {
   title: "Styling",
-  description: "Learn how to fully customize your neobrutalism layouts.",
+  description: "Learn how to fully customize your component liabrary",
 }
 
 export default function Page() {

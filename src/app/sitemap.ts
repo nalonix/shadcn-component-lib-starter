@@ -5,7 +5,7 @@ import COMPONENTS from "@/data/components"
 
 import { transformToSlug } from "@/lib/utils"
 
-const root = "https://www.neobrutalism.dev"
+const root = process.env.BASE_URL || "https://example.com"
 
 const DOCS_PAGES = [
   "/docs",

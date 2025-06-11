@@ -19,17 +19,10 @@ const BlockInstallation: React.FC<BlockInstallationProps> = ({ block, children }
         <TabsTrigger value="cli">
           Shadcn CLI
         </TabsTrigger>
-        <TabsTrigger value="manual">
-          Manual Installation
-        </TabsTrigger>
       </TabsList>
       
       <TabsContent value="cli">
         <ShadcnCliCommand component={block} />
-      </TabsContent>
-      
-      <TabsContent value="manual">
-        {children}
       </TabsContent>
     </Tabs>
   )
