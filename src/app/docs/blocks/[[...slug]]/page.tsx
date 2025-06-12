@@ -79,14 +79,16 @@ export default async function DocPage(props: DocPageProps) {
     (item): item is { href: string; text: string } => typeof item === "object",
   )
 
+  console.log("Selfish 👉👉: ",filteredSidebar)
   const currentIndex = filteredSidebar.findIndex((item) => {
     const isIndex = slugAsParams === ""
+    console.log(slugAsParams, item)
 
     if (isIndex) {
       return item.href === "/docs"
     }
 
-    return item.href === "/docs/" + slugAsParams
+    return item.href === "/docs/blocks/" + slugAsParams
   })
 
   const prevItem = filteredSidebar[currentIndex - 1]
@@ -132,7 +134,7 @@ export default async function DocPage(props: DocPageProps) {
             </div>
           </article>
           {!isTocEmpty && (
-            <aside className="fixed bg-secondary-background border-l-4 not-prose border-l-border overflow-hidden top-[70px] xl:flex hidden flex-col justify-between right-0 w-[250px] h-[calc(100svh-70px)] overflow-y-auto">
+            <aside className="fixed bg-secondary-background border-l-1 not-prose border-l-border overflow-hidden top-[70px] xl:flex hidden flex-col justify-between right-0 w-[250px] h-[calc(100svh-70px)] overflow-y-auto">
               <TableOfContents items={tableOfContents} />
             </aside>
           )}

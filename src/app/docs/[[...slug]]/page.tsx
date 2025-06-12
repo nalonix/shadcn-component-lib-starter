@@ -132,7 +132,7 @@ export default async function DocPage(props: DocPageProps) {
             </div>
           </article>
           {!isTocEmpty && (
-            <aside className="fixed bg-secondary-background border-l-4 not-prose border-l-border overflow-hidden top-[70px] xl:flex hidden flex-col justify-between right-0 w-[250px] h-[calc(100svh-70px)] overflow-y-auto">
+            <aside className="fixed bg-secondary-background border-l-1 not-prose border-l-border overflow-hidden top-[70px] xl:flex hidden flex-col justify-between right-0 w-[250px] h-[calc(100svh-70px)] overflow-y-auto">
               <TableOfContents items={tableOfContents} />
             </aside>
           )}

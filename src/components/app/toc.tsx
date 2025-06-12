@@ -1,6 +1,8 @@
 // @ts-nocheck
 "use client"
 
+
+// TODO: add contribution, report but and more link for every page
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
@@ -28,17 +30,17 @@ export function TableOfContents({ items }: TocProps) {
 
   return (
     <div className="overflow-y-auto toc-scrollbar">
-      <h3 className="text-xl p-3 font-bold">On this page</h3>
+      <h3 className="text-lg p-2 font-bold">On this page</h3>
       <div>
         {items.map(({ depth, id, value }) => (
           <a
             key={id}
             href={`#${id}`}
             className={cn(
-              "block border-t-3 text-foreground border-t-border last:border-b-3 last:border-b-border hover:bg-main/70 hover:text-main-foreground font-base py-1 pr-3",
+              "block font-semibold text-zinc-600 dark:text-white hover:text-main-foreground py-1 pr-3",
               depth === 2 ? "pl-3" : depth === 3 ? "pl-6" : "pl-9",
               id === activeHeading &&
-                "bg-main hover:bg-main text-main-foreground",
+                "font-semibold text-main-foreground",
             )}
           >
             {value}

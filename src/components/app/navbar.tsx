@@ -32,7 +32,7 @@ async function Navbar() {
   // const starsCount = (repo.stargazers_count / 1000).toFixed(1) + "k"
 
   return (
-    <nav className="fixed left-0 top-0 z-20 mx-auto flex h-[70px] w-full items-center border-b-4 border-border bg-secondary-background px-5">
+    <nav className="fixed left-0 top-0 z-20 mx-auto flex h-[70px] w-full items-center border-b-1 border-border/50 bg-secondary-background px-5">
       <div className="mx-auto flex w-[1300px] text-foreground max-w-full items-center justify-between">
         <div className="flex items-center xl:gap-10 gap-10">
           <Link
