@@ -15,8 +15,6 @@ export default function Sidebar() {
   const pathname = usePathname()
 
   const getSidebarLinks = () => {
-    if (pathname.includes("/components")) return COMPONENTS_SIDEBAR
-    if (pathname.includes("/blocks")) return BLOCKS_SIDEBAR
     return MAIN_SIDEBAR
   }
 
