@@ -13,7 +13,7 @@ export function Pre(props: PreProps) {
   return (
     <div
       data-slot="pre-wrapper"
-      className={cn("relative shadow-shadow", wrapperClassName)}
+      className={cn("relative", wrapperClassName)}
     >
       <pre className="bg-black border-2 border-border code text-sm max-h-[300px] overflow-auto p-4 not-prose">
         <CopyButton text={__rawstring__} />

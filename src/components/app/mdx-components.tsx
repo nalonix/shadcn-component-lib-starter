@@ -24,7 +24,7 @@ import ShadcnCliCommand from "./shadcn-cli-command"
 
 export const sharedComponents = {
   Tabs: ({ className, ...props }: React.ComponentProps<typeof Tabs>) => (
-    <Tabs className={cn("w-full shadow-shadow", className)} {...props} />
+    <Tabs className={cn("w-full", className)} {...props} />
   ),
   TabsList: ({
     className,
