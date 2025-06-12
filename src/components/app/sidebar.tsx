@@ -23,12 +23,12 @@ export default function Sidebar() {
   const sidebarLinks = getSidebarLinks()
 
   return (
-    <aside className="scrollbar fixed top-[70px] bg-secondary-background h-[calc(100svh-70px)] max-h-[calc(100svh-70px)] w-[250px] overflow-y-auto border-r-4 lg:block hidden border-border">
+    <aside className="scrollbar hidden-scrollbar fixed top-[70px] bg-secondary-background p-4 h-[calc(100svh-70px)] max-h-[calc(100svh-70px)] w-[250px] overflow-y-auto border-r-1 lg:block hidden border-border/20">
       {sidebarLinks.map((item, id) => {
         return typeof item === "string" ? (
           <div
             key={id}
-            className="block border-b-4 border-r-4 border-border p-4 text-xl font-heading"
+            className="block px-3 py-2 text-xl font-heading"
           >
             {item}
           </div>
@@ -37,9 +37,9 @@ export default function Sidebar() {
             key={id}
             href={item.href}
             className={cn(
-              "capitalize block border-b-4 border-r-4 border-border p-4 pl-7 text-lg font-base text-foreground/90 hover:bg-main/70 hover:text-main-foreground",
+              "capitalize block px-3 py-1 my-1 text-zinc-600 font-semibold hover:translate-x-[1px] duration-100",
               item.href === pathname &&
-                "bg-main text-main-foreground hover:bg-main"
+                "bg-background text-main-foreground rounded-md"
             )}
           >
             {item.text}

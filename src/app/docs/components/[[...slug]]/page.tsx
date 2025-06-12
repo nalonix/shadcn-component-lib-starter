@@ -36,7 +36,7 @@ export async function generateStaticParams(): Promise<
 
 async function getDocFromParams({ params }: DocPageProps) {
   const slug = (await params).slug?.join("/") || ""
-  docs.forEach((ele)=> console.log(ele.title))
+  // docs.forEach((ele)=> console.log(ele.title))
   const doc = docs.find((doc) => {
     // console.log(doc.slugAsParams, slug)
     return doc.slugAsParams === slug

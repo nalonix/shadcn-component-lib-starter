@@ -131,6 +131,17 @@ html.dark body::-webkit-scrollbar-thumb {
   border-left: 4px solid #000;
 }
 
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.hidden-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
 .code::-webkit-scrollbar-track {
   background: transparent;
 }

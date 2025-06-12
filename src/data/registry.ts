@@ -104,7 +104,7 @@ const UI = [
     registryDependencies: ["button"],
     files: [
       {
-        path: "src/components/ui/calendar.tsx",
+        path: "src/registry/default/ui/calendar.tsx",
         type: "registry:ui",
       },
     ],
@@ -152,7 +152,7 @@ const UI = [
     dependencies: ["@radix-ui/react-collapsible"],
     files: [
       {
-        path: "src/components/ui/collapsible.tsx",
+        path: "src/registry/default/ui/collapsible.tsx",
         type: "registry:ui",
       },
     ],
@@ -165,7 +165,7 @@ const UI = [
     registryDependencies: [`${BASE_URL}/r/ndialog.json`],
     files: [
       {
-        path: "src/components/ui/command.tsx",
+        path: "src/registry/default/ui/command.tsx",
         type: "registry:ui",
       },
     ],
@@ -177,7 +177,7 @@ const UI = [
     dependencies: ["@radix-ui/react-context-menu"],
     files: [
       {
-        path: "src/components/ui/context-menu.tsx",
+        path: "src/registry/default/ui/context-menu.tsx",
         type: "registry:ui",
       },
     ],
@@ -188,7 +188,7 @@ const UI = [
     dependencies: ["@radix-ui/react-dialog"],
     files: [
       {
-        path: "src/components/ui/dialog.tsx",
+        path: "src/registry/default/ui/dialog.tsx",
         type: "registry:ui",
       },
     ],
@@ -200,7 +200,7 @@ const UI = [
     dependencies: ["@radix-ui/react-dialog"],
     files: [
       {
-        path: "src/components/ui/dialog.tsx",
+        path: "src/registry/default/ui/dialog.tsx",
         type: "registry:ui",
       },
     ],
@@ -212,7 +212,7 @@ const UI = [
     dependencies: ["vaul", "@radix-ui/react-dialog"],
     files: [
       {
-        path: "src/components/ui/drawer.tsx",
+        path: "src/registry/default/ui/drawer.tsx",
         type: "registry:ui",
       },
     ],
@@ -224,7 +224,7 @@ const UI = [
     dependencies: ["@radix-ui/react-dropdown-menu"],
     files: [
       {
-        path: "src/components/ui/dropdown-menu.tsx",
+        path: "src/registry/default/ui/dropdown-menu.tsx",
         type: "registry:ui",
       },
     ],
@@ -246,7 +246,7 @@ const UI = [
     ],
     files: [
       {
-        path: "src/components/ui/form.tsx",
+        path: "src/registry/default/ui/form.tsx",
         type: "registry:ui",
       },
     ],
@@ -258,7 +258,7 @@ const UI = [
     dependencies: ["@radix-ui/react-hover-card"],
     files: [
       {
-        path: "src/components/ui/hover-card.tsx",
+        path: "src/registry/default/ui/hover-card.tsx",
         type: "registry:ui",
       },
     ],
@@ -269,7 +269,7 @@ const UI = [
     type: "registry:ui",
     files: [
       {
-        path: "src/components/ui/image-card.tsx",
+        path: "src/registry/default/ui/image-card.tsx",
         type: "registry:ui",
       },
     ],
@@ -280,7 +280,7 @@ const UI = [
     type: "registry:ui",
     files: [
       {
-        path: "src/components/ui/input.tsx",
+        path: "src/registry/default/ui/input.tsx",
         type: "registry:ui",
       },
     ],
@@ -292,7 +292,7 @@ const UI = [
     dependencies: ["input-otp"],
     files: [
       {
-        path: "src/components/ui/input-otp.tsx",
+        path: "src/registry/default/ui/input-otp.tsx",
         type: "registry:ui",
       },
     ],
@@ -303,7 +303,7 @@ const UI = [
     dependencies: ["@radix-ui/react-label"],
     files: [
       {
-        path: "src/components/ui/label.tsx",
+        path: "src/registry/default/ui/label.tsx",
         type: "registry:ui",
       },
     ],
@@ -315,7 +315,7 @@ const UI = [
     dependencies: ["@radix-ui/react-label"],
     files: [
       {
-        path: "src/components/ui/label.tsx",
+        path: "src/registry/default/ui/label.tsx",
         type: "registry:ui",
       },
     ],
@@ -327,7 +327,7 @@ const UI = [
     dependencies: ["@radix-ui/react-menubar"],
     files: [
       {
-        path: "src/components/ui/menubar.tsx",
+        path: "src/registry/default/ui/menubar.tsx",
         type: "registry:ui",
       },
     ],
@@ -339,7 +339,7 @@ const UI = [
     dependencies: ["@radix-ui/react-navigation-menu"],
     files: [
       {
-        path: "src/components/ui/navigation-menu.tsx",
+        path: "src/registry/default/ui/navigation-menu.tsx",
         type: "registry:ui",
       },
     ],
@@ -351,7 +351,7 @@ const UI = [
     registryDependencies: ["${BASE_URL}/r/nbutton.json"],
     files: [
       {
-        path: "src/components/ui/pagination.tsx",
+        path: "src/registry/default/ui/pagination.tsx",
         type: "registry:ui",
       },
     ],
@@ -363,7 +363,7 @@ const UI = [
     dependencies: ["@radix-ui/react-popover"],
     files: [
       {
-        path: "src/components/ui/popover.tsx",
+        path: "src/registry/default/ui/popover.tsx",
         type: "registry:ui",
       },
     ],
@@ -375,7 +375,7 @@ const UI = [
     dependencies: ["@radix-ui/react-progress"],
     files: [
       {
-        path: "src/components/ui/progress.tsx",
+        path: "src/registry/default/ui/progress.tsx",
         type: "registry:ui",
       },
     ],
@@ -387,7 +387,7 @@ const UI = [
     dependencies: ["@radix-ui/react-radio-group"],
     files: [
       {
-        path: "src/components/ui/radio-group.tsx",
+        path: "src/registry/default/ui/radio-group.tsx",
         type: "registry:ui",
       },
     ],
@@ -399,7 +399,7 @@ const UI = [
     dependencies: ["react-resizable-panels"],
     files: [
       {
-        path: "src/components/ui/resizable.tsx",
+        path: "src/registry/default/ui/resizable.tsx",
         type: "registry:ui",
       },
     ],
@@ -411,7 +411,7 @@ const UI = [
     dependencies: ["@radix-ui/react-scroll-area"],
     files: [
       {
-        path: "src/components/ui/scroll-area.tsx",
+        path: "src/registry/default/ui/scroll-area.tsx",
         type: "registry:ui",
       },
     ],
@@ -423,7 +423,7 @@ const UI = [
     dependencies: ["@radix-ui/react-select"],
     files: [
       {
-        path: "src/components/ui/select.tsx",
+        path: "src/registry/default/ui/select.tsx",
         type: "registry:ui",
       },
     ],
@@ -435,7 +435,7 @@ const UI = [
     dependencies: ["@radix-ui/react-dialog"],
     files: [
       {
-        path: "src/components/ui/sheet.tsx",
+        path: "src/registry/default/ui/sheet.tsx",
         type: "registry:ui",
       },
     ],
@@ -446,7 +446,7 @@ const UI = [
     type: "registry:ui",
     files: [
       {
-        path: "src/components/ui/skeleton.tsx",
+        path: "src/registry/default/ui/skeleton.tsx",
         type: "registry:ui",
       },
     ],
@@ -458,7 +458,7 @@ const UI = [
     dependencies: ["@radix-ui/react-slider"],
     files: [
       {
-        path: "src/components/ui/slider.tsx",
+        path: "src/registry/default/ui/slider.tsx",
         type: "registry:ui",
       },
     ],
@@ -470,7 +470,7 @@ const UI = [
     dependencies: ["sonner", "next-themes"],
     files: [
       {
-        path: "src/components/ui/sonner.tsx",
+        path: "src/registry/default/ui/sonner.tsx",
         type: "registry:ui",
       },
     ],
@@ -482,7 +482,7 @@ const UI = [
     dependencies: ["@radix-ui/react-switch"],
     files: [
       {
-        path: "src/components/ui/switch.tsx",
+        path: "src/registry/default/ui/switch.tsx",
         type: "registry:ui",
       },
     ],
@@ -493,7 +493,7 @@ const UI = [
     type: "registry:ui",
     files: [
       {
-        path: "src/components/ui/table.tsx",
+        path: "src/registry/default/ui/table.tsx",
         type: "registry:ui",
       },
     ],
@@ -505,7 +505,7 @@ const UI = [
     dependencies: ["@radix-ui/react-tabs"],
     files: [
       {
-        path: "src/components/ui/tabs.tsx",
+        path: "src/registry/default/ui/tabs.tsx",
         type: "registry:ui",
       },
     ],
@@ -516,7 +516,7 @@ const UI = [
     type: "registry:ui",
     files: [
       {
-        path: "src/components/ui/textarea.tsx",
+        path: "src/registry/default/ui/textarea.tsx",
         type: "registry:ui",
       },
     ],
@@ -528,7 +528,7 @@ const UI = [
     dependencies: ["@radix-ui/react-tooltip"],
     files: [
       {
-        path: "src/components/ui/tooltip.tsx",
+        path: "src/registry/default/ui/tooltip.tsx",
         type: "registry:ui",
       },
     ],
