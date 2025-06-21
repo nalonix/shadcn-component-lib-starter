@@ -7,7 +7,7 @@
     "cmdk"
   ],
   "registryDependencies": [
-    "undefined/r/dialog.json"
+    "dialog"
   ],
   "files": [
     {

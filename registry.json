@@ -73,7 +73,7 @@
         "cmdk"
       ],
       "registryDependencies": [
-        "undefined/r/dialog.json"
+        "dialog"
       ],
       "files": [
         {
@@ -122,8 +122,8 @@
         "react-hook-form"
       ],
       "registryDependencies": [
-        "${BASE_URL}/r/button.json",
-        "${BASE_URL}/r/label.json"
+        "button",
+        "label"
       ],
       "files": [
         {
@@ -162,7 +162,7 @@
       "title": "Pagination",
       "type": "registry:ui",
       "registryDependencies": [
-        "${BASE_URL}/r/button.json"
+        "button"
       ],
       "files": [
         {

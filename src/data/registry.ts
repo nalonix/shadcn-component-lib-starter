@@ -106,10 +106,7 @@ const UI = [
       "zod",
       "react-hook-form",
     ],
-    registryDependencies: [
-      "${BASE_URL}/r/button.json",
-      "${BASE_URL}/r/label.json",
-    ],
+    registryDependencies: ["button", "label"],
     files: [
       {
         path: "src/registry/default/ui/form.tsx",
@@ -144,7 +141,7 @@ const UI = [
     name: "pagination",
     title: "Pagination",
     type: "registry:ui",
-    registryDependencies: ["${BASE_URL}/r/button.json"],
+    registryDependencies: [`${BASE_URL}/r/button.json`],
     files: [
       {
         path: "src/registry/default/ui/pagination.tsx",
