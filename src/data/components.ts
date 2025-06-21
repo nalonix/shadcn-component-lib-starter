@@ -12,17 +12,15 @@ import AlertWithButtonDemo from "@/examples/ui/alert/with-button"
 import AvatarDemo from "@/examples/ui/avatar"
 import AvatarFallbackDemo from "@/examples/ui/avatar/fallback"
 import BadgeDemo from "@/examples/ui/badge"
-import BadgeNeutralDemo from "@/examples/ui/badge/neutral"
+import BadgeDefaultDemo from "@/examples/ui/badge/default"
+import BadgeDestructiveDemo from "@/examples/ui/badge/destructive"
 import BadgeWithIconDemo from "@/examples/ui/badge/with-icon"
 import BreadcrumbDemo from "@/examples/ui/breadcrumb"
 import ButtonDemo from "@/examples/ui/button"
-import ButtonIconDemo from "@/examples/ui/button/icon"
-import ButtonNeutralDemo from "@/examples/ui/button/neutral"
-import ButtonNoShadowDemo from "@/examples/ui/button/no-shadow"
-import ButtonReverseDemo from "@/examples/ui/button/reverse"
+import ButtonDestructiveDemo from "@/examples/ui/button/destructive"
+import ButtonOutlineDemo from "@/examples/ui/button/outline"
+import ButtonSecondaryDemo from "@/examples/ui/button/secondary"
 import ButtonWithIconDemo from "@/examples/ui/button/with-icon"
-import CalendarDemo from "@/examples/ui/calendar/index"
-import CalendarRangeDemo from "@/examples/ui/calendar/range"
 import CardDemo from "@/examples/ui/card"
 import CarouselDemo from "@/examples/ui/carousel"
 import CheckboxDemo from "@/examples/ui/checkbox"
@@ -32,9 +30,9 @@ import ComboboxMultiselectDemo from "@/examples/ui/combobox/multiselect"
 import ComboboxTimezonesDemo from "@/examples/ui/combobox/timezones"
 import ComboboxUsersDemo from "@/examples/ui/combobox/users"
 import CommandDemo from "@/examples/ui/command"
+import CommandDialogDemo from "@/examples/ui/command/dialog"
 import ContextMenuDemo from "@/examples/ui/context-menu"
 import DataTableDemo from "@/examples/ui/data-table"
-import DatePickerDemo from "@/examples/ui/date-picker"
 import DialogDemo from "@/examples/ui/dialog"
 import DialogWithScrollableContent from "@/examples/ui/dialog/scrollable-content"
 import DialogWithStickyFooter from "@/examples/ui/dialog/sticky-footer"
@@ -129,8 +127,8 @@ const COMPONENTS: Component[] = [
     name: "Badge",
     exampleComponent: BadgeDemo,
     examples: {
-      default: BadgeDemo,
-      neutral: BadgeNeutralDemo,
+      default: BadgeDefaultDemo,
+      destructive: BadgeDestructiveDemo,
       "with-icon": BadgeWithIconDemo,
     },
   },
@@ -143,19 +141,10 @@ const COMPONENTS: Component[] = [
     exampleComponent: ButtonDemo,
     examples: {
       default: ButtonDemo,
-      reverse: ButtonReverseDemo,
-      noShadow: ButtonNoShadowDemo,
-      neutral: ButtonNeutralDemo,
+      secondary: ButtonSecondaryDemo,
+      destructive: ButtonDestructiveDemo,
+      outline: ButtonOutlineDemo,
       "with-icon": ButtonWithIconDemo,
-      icon: ButtonIconDemo,
-    },
-  },
-  {
-    name: "Calendar",
-    exampleComponent: CalendarDemo,
-    examples: {
-      default: CalendarDemo,
-      range: CalendarRangeDemo,
     },
   },
   {
@@ -187,14 +176,14 @@ const COMPONENTS: Component[] = [
   {
     name: "Command",
     exampleComponent: CommandDemo,
+    examples: {
+      default: CommandDemo,
+      dialog: CommandDialogDemo,
+    },
   },
   {
     name: "Context Menu",
     exampleComponent: ContextMenuDemo,
-  },
-  {
-    name: "Date Picker",
-    exampleComponent: DatePickerDemo,
   },
   {
     name: "Data Table",

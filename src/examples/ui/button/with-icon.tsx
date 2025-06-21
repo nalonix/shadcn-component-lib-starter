@@ -4,7 +4,7 @@ import { Button } from "@/registry/default/ui/button"
 
 export default function ButtonWithIconDemo() {
   return (
-    <Button>
+    <Button variant={"outline"} size={"sm"}>
       <SendIcon /> Send
     </Button>
   )

@@ -112,7 +112,7 @@ export const columns: ColumnDef<Payment>[] = [
     header: ({ column }) => {
       return (
         <Button
-          variant="noShadow"
+          variant="ghost"
           size="sm"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
@@ -147,7 +147,7 @@ export const columns: ColumnDef<Payment>[] = [
       return (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="noShadow" className="size-8 p-0">
+            <Button variant="ghost" className="size-8 p-0">
               <span className="sr-only">Open menu</span>
               <MoreHorizontal />
             </Button>
@@ -169,10 +169,11 @@ export const columns: ColumnDef<Payment>[] = [
   },
 ]
 
+
 export default function DataTableDemo() {
   const [sorting, setSorting] = React.useState<SortingState>([])
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
-    [],
+    []
   )
   const [columnVisibility, setColumnVisibility] =
     React.useState<VisibilityState>({})
@@ -198,7 +199,7 @@ export default function DataTableDemo() {
   })
 
   return (
-    <div className="w-full font-base text-main-foreground">
+    <div className="w-full">
       <div className="flex items-center py-4">
         <Input
           placeholder="Filter emails..."
@@ -210,7 +211,7 @@ export default function DataTableDemo() {
         />
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="noShadow" className="ml-auto">
+            <Button variant="outline" className="ml-auto">
               Columns <ChevronDown />
             </Button>
           </DropdownMenuTrigger>
@@ -235,22 +236,19 @@ export default function DataTableDemo() {
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-      <div>
+      <div className="rounded-md border">
         <Table>
-          <TableHeader className="font-heading">
+          <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
-              <TableRow
-                className="bg-secondary-background text-foreground"
-                key={headerGroup.id}
-              >
+              <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => {
                   return (
-                    <TableHead className="text-foreground" key={header.id}>
+                    <TableHead key={header.id}>
                       {header.isPlaceholder
                         ? null
                         : flexRender(
                             header.column.columnDef.header,
-                            header.getContext(),
+                            header.getContext()
                           )}
                     </TableHead>
                   )
@@ -262,15 +260,14 @@ export default function DataTableDemo() {
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
                 <TableRow
-                  className="bg-secondary-background text-foreground data-[state=selected]:bg-main data-[state=selected]:text-main-foreground"
                   key={row.id}
                   data-state={row.getIsSelected() && "selected"}
                 >
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell className="px-4 py-2" key={cell.id}>
+                    <TableCell key={cell.id}>
                       {flexRender(
                         cell.column.columnDef.cell,
-                        cell.getContext(),
+                        cell.getContext()
                       )}
                     </TableCell>
                   ))}
@@ -290,13 +287,13 @@ export default function DataTableDemo() {
         </Table>
       </div>
       <div className="flex items-center justify-end space-x-2 py-4">
-        <div className="text-foreground flex-1 text-sm">
+        <div className="text-muted-foreground flex-1 text-sm">
           {table.getFilteredSelectedRowModel().rows.length} of{" "}
           {table.getFilteredRowModel().rows.length} row(s) selected.
         </div>
         <div className="space-x-2">
           <Button
-            variant="noShadow"
+            variant="outline"
             size="sm"
             onClick={() => table.previousPage()}
             disabled={!table.getCanPreviousPage()}
@@ -304,7 +301,7 @@ export default function DataTableDemo() {
             Previous
           </Button>
           <Button
-            variant="noShadow"
+            variant="outline"
             size="sm"
             onClick={() => table.nextPage()}
             disabled={!table.getCanNextPage()}

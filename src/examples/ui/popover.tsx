@@ -11,13 +11,15 @@ export default function PopoverDemo() {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button variant="noShadow">Open popover</Button>
+        <Button variant="outline">Open popover</Button>
       </PopoverTrigger>
-      <PopoverContent className="w-80 text-main-foreground">
+      <PopoverContent className="w-80">
         <div className="grid gap-4">
           <div className="space-y-2">
-            <h4 className="font-heading leading-none">Dimensions</h4>
-            <p className="text-sm">Set the dimensions for the layer.</p>
+            <h4 className="leading-none font-medium">Dimensions</h4>
+            <p className="text-muted-foreground text-sm">
+              Set the dimensions for the layer.
+            </p>
           </div>
           <div className="grid gap-2">
             <div className="grid grid-cols-3 items-center gap-4">

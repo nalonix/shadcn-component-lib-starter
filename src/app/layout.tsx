@@ -68,7 +68,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <SetStylingPref />
+          {/* <SetStylingPref /> */}
           <ScrollToTop />
           <Toaster />
         </ThemeProvider>

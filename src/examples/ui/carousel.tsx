@@ -1,3 +1,5 @@
+import * as React from "react"
+
 import { Card, CardContent } from "@/registry/default/ui/card"
 import {
   Carousel,
@@ -9,24 +11,22 @@ import {
 
 export default function CarouselDemo() {
   return (
-    <div className="w-full flex-col items-center gap-4 flex">
-      <Carousel className="w-full max-w-[200px]">
-        <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index}>
-              <div className="p-[10px]">
-                <Card className="shadow-none p-0 bg-main text-main-foreground">
-                  <CardContent className="flex aspect-square items-center justify-center p-4">
-                    <span className="text-3xl font-base">{index + 1}</span>
-                  </CardContent>
-                </Card>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
-    </div>
+    <Carousel className="w-full max-w-xs">
+      <CarouselContent>
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem key={index}>
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-4xl font-semibold">{index + 1}</span>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
   )
 }

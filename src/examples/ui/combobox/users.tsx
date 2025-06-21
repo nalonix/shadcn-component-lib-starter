@@ -51,7 +51,6 @@ export default function UserCombobox() {
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <Button
-          variant="noShadow"
           role="combobox"
           aria-expanded={open}
           className="w-full justify-between px-2 md:max-w-[200px]"

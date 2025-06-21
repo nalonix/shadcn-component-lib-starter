@@ -1,6 +1,7 @@
 import { Button } from "@/registry/default/ui/button"
 import {
   Card,
+  CardAction,
   CardContent,
   CardDescription,
   CardFooter,
@@ -12,12 +13,15 @@ import { Label } from "@/registry/default/ui/label"
 
 export default function CardDemo() {
   return (
-    <Card className="w-full max-w-sm">
+    <Card className="w-full max-w-sm border">
       <CardHeader>
         <CardTitle>Login to your account</CardTitle>
         <CardDescription>
           Enter your email below to login to your account
         </CardDescription>
+        <CardAction>
+          <Button variant="link">Sign Up</Button>
+        </CardAction>
       </CardHeader>
       <CardContent>
         <form>
@@ -50,15 +54,9 @@ export default function CardDemo() {
         <Button type="submit" className="w-full">
           Login
         </Button>
-        <Button variant="neutral" className="w-full">
+        <Button variant="outline" className="w-full">
           Login with Google
         </Button>
-        <div className="mt-4 text-center text-sm">
-          Don&apos;t have an account?{" "}
-          <a href="#" className="underline underline-offset-4">
-            Sign up
-          </a>
-        </div>
       </CardFooter>
     </Card>
   )

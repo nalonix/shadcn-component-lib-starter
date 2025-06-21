@@ -114,24 +114,6 @@
       ]
     },
     {
-      "name": "calendar",
-      "title": "Calendar",
-      "type": "registry:ui",
-      "dependencies": [
-        "react-day-picker@8.10.1",
-        "date-fns"
-      ],
-      "registryDependencies": [
-        "button"
-      ],
-      "files": [
-        {
-          "path": "src/registry/default/ui/calendar.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
       "name": "card",
       "title": "Card",
       "type": "registry:ui",

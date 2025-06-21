@@ -24,6 +24,7 @@ export default function ComponentPreview({
   const componentData = components.find(
     (c) => transformToSlug(c.name) === component,
   )
+  console.log(componentData, component)
 
   if (!componentData) return null
 
@@ -36,16 +37,19 @@ export default function ComponentPreview({
 
   if (!ExampleComponent) return null
 
+  console.log(ExampleComponent)
+
   return (
     <>
       <Tabs defaultValue="preview" className="w-full">
-        <TabsList className="grid w-full border-b-0 grid-cols-2">
+        <TabsList className="grid w-full rounded-t-md border-b-0 grid-cols-2">
           <TabsTrigger value="preview">Preview</TabsTrigger>
           <TabsTrigger value="code">Code</TabsTrigger>
         </TabsList>
         <TabsContent value="preview">
-          <div className="not-prose flex w-full items-center justify-center z-15 relative border-2 mb-5 min-h-[200px] border-border bg-secondary-background bg-[15px_20px] bg-[linear-gradient(to_right,#8080804D_1px,transparent_1px),linear-gradient(to_bottom,#80808090_1px,transparent_1px)] sm:px-10 px-5 sm:py-20 py-10 [background-size:40px_40px]">
+          <div className="not-prose flex w-full items-center justify-center z-15 relative rounded-b-md border-2 mb-5 min-h-[200px] border-border bg-secondary-background bg-[15px_20px] sm:px-10 px-5 sm:py-20 py-10 [background-size:40px_40px]">
             <ExampleComponent />
+            
           </div>
         </TabsContent>
         <TabsContent value="code">{children}</TabsContent>

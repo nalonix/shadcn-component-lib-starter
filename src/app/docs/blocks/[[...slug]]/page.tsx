@@ -79,10 +79,8 @@ export default async function DocPage(props: DocPageProps) {
     (item): item is { href: string; text: string } => typeof item === "object",
   )
 
-  console.log("Selfish 👉👉: ",filteredSidebar)
   const currentIndex = filteredSidebar.findIndex((item) => {
     const isIndex = slugAsParams === ""
-    console.log(slugAsParams, item)
 
     if (isIndex) {
       return item.href === "/docs"

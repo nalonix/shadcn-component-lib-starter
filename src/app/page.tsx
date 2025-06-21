@@ -48,7 +48,7 @@ export default function Home() {
           <p>show answers to frequently asked questions</p>
         </section>
       </div>
-      <footer className="z-30 border-t-4 border-border bg-secondary-background px-5 py-5 text-center sm:text-base text-sm">
+      <footer className="z-30 border-t-4 border-border px-5 py-5 text-center sm:text-base text-sm">
         Released under MIT License. The source code is available on{" "}
         {/* TODO:update the repo link */}
         <a

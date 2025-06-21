@@ -82,7 +82,6 @@ export default async function DocPage(props: DocPageProps) {
   const filteredSidebar = MAIN_SIDEBAR.filter(
     (item): item is { href: string; text: string } => typeof item === "object",
   )
-  console.log("Selfish ness 👉👉: ",MAIN_SIDEBAR)
 
   const currentIndex = filteredSidebar.findIndex((item) => {
     const isIndex = slugAsParams === ""

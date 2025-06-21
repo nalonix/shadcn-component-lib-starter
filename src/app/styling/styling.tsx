@@ -93,7 +93,7 @@ export default function Styling() {
 
   const updateBorderRadius = (value: number) => {
     const r = window.document.querySelector(":root") as HTMLElement
-    r.style.setProperty("--border-radius", `${value}px`)
+    r.style.setProperty("--radius", `${value}px`)
 
     localStorage.setItem("borderRadius", value.toString())
 
@@ -120,7 +120,6 @@ export default function Styling() {
 
   const updateHeadingFontWeight = (value: number) => {
     const r = window.document.querySelector(":root") as HTMLElement
-    r.style.setProperty("--heading-font-weight", `${value}`)
 
     setFontWeight([value, fontWeight[1]])
 
@@ -141,11 +140,9 @@ export default function Styling() {
 
     updateColor(defaultColorPalette.name)
 
-    r.style.setProperty("--border-radius", "5px")
+    r.style.setProperty("--radius", "5px")
     r.style.setProperty("--box-shadow-x", "4px")
     r.style.setProperty("--box-shadow-y", "4px")
-    r.style.setProperty("--heading-font-weight", "700")
-    r.style.setProperty("--base-font-weight", "500")
 
     setColor(defaultColorPalette)
     setBorderRadius(5)
@@ -168,7 +165,6 @@ export default function Styling() {
   --main: ${main};
   --border: oklch(0% 0 0);
   --ring: oklch(0% 0 0);
-  --overlay: oklch(0% 0 0 / 0.8);
   --shadow: ${boxShadowLength[0]}px ${boxShadowLength[1]}px 0px 0px var(--border);
 }
 
@@ -190,7 +186,6 @@ export default function Styling() {
   --color-foreground: var(--foreground);
   --color-main-foreground: var(--main-foreground);
   --color-border: var(--border);
-  --color-overlay: var(--overlay);
   --color-ring: var(--ring);
 
   --spacing-boxShadowX: ${boxShadowLength[0]}px;
@@ -200,7 +195,6 @@ export default function Styling() {
   --radius-base: ${borderRadius}px;
   --shadow-shadow: var(--shadow);
   --font-weight-base: ${fontWeight[1]};
-  --font-weight-heading: ${fontWeight[0]};
 }`
 
   return (
@@ -251,7 +245,6 @@ export default function Styling() {
                         : "bg-secondary-background text-foreground",
                     )}
                     key={btn}
-                    variant="noShadow"
                   >
                     {`${btn} px`}
                   </Button>
@@ -271,7 +264,6 @@ export default function Styling() {
                         : "bg-secondary-background text-foreground",
                     )}
                     key={btn}
-                    variant="noShadow"
                   >
                     {`${btn} px`}
                   </Button>
@@ -291,7 +283,6 @@ export default function Styling() {
                         : "bg-secondary-background text-foreground",
                     )}
                     key={btn}
-                    variant="noShadow"
                   >
                     {`${btn} px`}
                   </Button>
@@ -311,7 +302,6 @@ export default function Styling() {
                         : "bg-secondary-background text-foreground",
                     )}
                     key={btn}
-                    variant="noShadow"
                   >
                     {btn}
                   </Button>
@@ -331,7 +321,6 @@ export default function Styling() {
                         : "bg-secondary-background text-foreground",
                     )}
                     key={btn}
-                    variant="noShadow"
                   >
                     {btn}
                   </Button>
@@ -343,7 +332,7 @@ export default function Styling() {
             <SheetClose asChild>
               <Button>Save changes</Button>
             </SheetClose>
-            <Button variant="neutral" onClick={resetStyling}>
+            <Button variant="default" onClick={resetStyling}>
               Reset
             </Button>
           </SheetFooter>
@@ -351,7 +340,7 @@ export default function Styling() {
       </Sheet>
       <Dialog>
         <DialogTrigger asChild>
-          <Button variant="neutral">Copy</Button>
+          <Button variant="default">Copy</Button>
         </DialogTrigger>
         <DialogContent className="max-w-full">
           <DialogHeader>

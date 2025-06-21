@@ -54,7 +54,6 @@ export default function ComboboxWithCheckbox() {
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <Button
-          variant="noShadow"
           role="combobox"
           aria-expanded={open}
           className="w-fit min-w-[280px] justify-between"

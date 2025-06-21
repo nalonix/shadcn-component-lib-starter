@@ -1,5 +1,3 @@
-import { Code2Icon, PlusIcon, TrashIcon } from "lucide-react"
-
 import {
   ContextMenu,
   ContextMenuCheckboxItem,
@@ -19,10 +17,10 @@ import {
 export default function ContextMenuDemo() {
   return (
     <ContextMenu>
-      <ContextMenuTrigger className="flex h-[150px] w-[300px] items-center justify-center rounded-base border border-border dark:border-[#fff] border-dashed text-sm font-base">
+      <ContextMenuTrigger className="flex h-[150px] w-[300px] items-center justify-center rounded-md border border-dashed text-sm">
         Right click here
       </ContextMenuTrigger>
-      <ContextMenuContent className="w-64">
+      <ContextMenuContent className="w-52">
         <ContextMenuItem inset>
           Back
           <ContextMenuShortcut>⌘[</ContextMenuShortcut>
@@ -37,32 +35,19 @@ export default function ContextMenuDemo() {
         </ContextMenuItem>
         <ContextMenuSub>
           <ContextMenuSubTrigger inset>More Tools</ContextMenuSubTrigger>
-          <ContextMenuSubContent className="w-48">
-            <ContextMenuItem inset>
-              Save Page...
-              <ContextMenuShortcut>⇧⌘S</ContextMenuShortcut>
-            </ContextMenuItem>
-            <ContextMenuItem>
-              <PlusIcon />
-              Create Shortcut...
-            </ContextMenuItem>
-            <ContextMenuItem inset>Name Window...</ContextMenuItem>
+          <ContextMenuSubContent className="w-44">
+            <ContextMenuItem>Save Page...</ContextMenuItem>
+            <ContextMenuItem>Create Shortcut...</ContextMenuItem>
+            <ContextMenuItem>Name Window...</ContextMenuItem>
             <ContextMenuSeparator />
-            <ContextMenuItem>
-              <Code2Icon />
-              Developer Tools
-            </ContextMenuItem>
+            <ContextMenuItem>Developer Tools</ContextMenuItem>
             <ContextMenuSeparator />
-            <ContextMenuItem>
-              <TrashIcon />
-              Delete
-            </ContextMenuItem>
+            <ContextMenuItem variant="destructive">Delete</ContextMenuItem>
           </ContextMenuSubContent>
         </ContextMenuSub>
         <ContextMenuSeparator />
         <ContextMenuCheckboxItem checked>
-          Show Bookmarks Bar
-          <ContextMenuShortcut>⌘⇧B</ContextMenuShortcut>
+          Show Bookmarks
         </ContextMenuCheckboxItem>
         <ContextMenuCheckboxItem>Show Full URLs</ContextMenuCheckboxItem>
         <ContextMenuSeparator />

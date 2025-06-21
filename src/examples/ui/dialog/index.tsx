@@ -17,7 +17,7 @@ export default function DialogDemo() {
     <Dialog>
       <form>
         <DialogTrigger asChild>
-          <Button>Edit Profile</Button>
+          <Button variant="outline">Open Dialog</Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
@@ -39,7 +39,7 @@ export default function DialogDemo() {
           </div>
           <DialogFooter>
             <DialogClose asChild>
-              <Button variant="neutral">Cancel</Button>
+              <Button variant="outline">Cancel</Button>
             </DialogClose>
             <Button type="submit">Save changes</Button>
           </DialogFooter>
