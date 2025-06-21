@@ -23,15 +23,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/registry/default/ui/select"
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/registry/default/ui/sheet"
+
 
 import { cn } from "@/lib/utils"
 
@@ -199,15 +191,8 @@ export default function Styling() {
 
   return (
     <div className="flex items-center justify-center gap-4">
-      <Sheet>
-        <SheetTrigger asChild>
-          <Button>Customize</Button>
-        </SheetTrigger>
-        <SheetContent>
-          <SheetHeader>
-            <SheetTitle>Customize styling</SheetTitle>
-          </SheetHeader>
-          <div className="grid flex-1 auto-rows-min overflow-y-auto gap-4 px-4">
+      <section>
+        <div className="grid flex-1 auto-rows-min overflow-y-auto gap-4 px-4">
             <div className="grid gap-3">
               <Label htmlFor="color">Color</Label>
               <Select value={name} onValueChange={updateColor}>
@@ -328,16 +313,7 @@ export default function Styling() {
               </div>
             </div>
           </div>
-          <SheetFooter>
-            <SheetClose asChild>
-              <Button>Save changes</Button>
-            </SheetClose>
-            <Button variant="default" onClick={resetStyling}>
-              Reset
-            </Button>
-          </SheetFooter>
-        </SheetContent>
-      </Sheet>
+      </section>
       <Dialog>
         <DialogTrigger asChild>
           <Button variant="default">Copy</Button>

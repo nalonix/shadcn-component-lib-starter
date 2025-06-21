@@ -45,7 +45,7 @@ async function Navbar() {
           <div className="items-center text-base font-base xl:gap-10 lg:flex gap-10 hidden">
             <Link href="/docs">Docs</Link>
 
-            <Link href="/docs/components/accordion">Components</Link>
+            <Link href="/docs/components/alert">Components</Link>
 
             <Link href="/docs/blocks/pokemons">Blocks</Link>
 

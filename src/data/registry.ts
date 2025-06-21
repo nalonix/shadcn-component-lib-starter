@@ -2,18 +2,6 @@ const BASE_URL = process.env.BASE_URL
 
 const UI = [
   {
-    name: "accordion",
-    title: "Accordion",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-accordion"],
-    files: [
-      {
-        path: "src/registry/default/ui/accordion.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
     name: "alert",
     title: "Alert",
     type: "registry:ui",
@@ -25,49 +13,12 @@ const UI = [
     ],
   },
   {
-    name: "alert-dialog",
-    title: "Alert dialog",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-alert-dialog"],
-    registryDependencies: ["button"],
-    files: [
-      {
-        path: "src/registry/default/ui/alert-dialog.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "avatar",
-    title: "Avatar",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-avatar"],
-    files: [
-      {
-        path: "src/registry/default/ui/avatar.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
     name: "badge",
     title: "Badge",
     type: "registry:ui",
     files: [
       {
         path: "src/registry/default/ui/badge.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "breadcrumb",
-    title: "Breadcrumb",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-slot"],
-    files: [
-      {
-        path: "src/registry/default/ui/breadcrumb.tsx",
         type: "registry:ui",
       },
     ],
@@ -108,19 +59,6 @@ const UI = [
     ],
   },
   {
-    name: "carousel",
-    title: "Carousel",
-    type: "registry:ui",
-    dependencies: ["embla-carousel-react"],
-    registryDependencies: ["button"],
-    files: [
-      {
-        path: "src/registry/default/ui/carousel.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
     name: "checkbox",
     title: "Checkbox",
     type: "registry:ui",
@@ -128,18 +66,6 @@ const UI = [
     files: [
       {
         path: "src/registry/default/ui/checkbox.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "collapsible",
-    title: "Collapsible",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-collapsible"],
-    files: [
-      {
-        path: "src/registry/default/ui/collapsible.tsx",
         type: "registry:ui",
       },
     ],
@@ -153,18 +79,6 @@ const UI = [
     files: [
       {
         path: "src/registry/default/ui/command.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "context-menu",
-    title: "Context menu",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-context-menu"],
-    files: [
-      {
-        path: "src/registry/default/ui/context-menu.tsx",
         type: "registry:ui",
       },
     ],
@@ -188,18 +102,6 @@ const UI = [
     files: [
       {
         path: "src/registry/default/ui/dialog.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "drawer",
-    title: "Drawer",
-    type: "registry:ui",
-    dependencies: ["vaul", "@radix-ui/react-dialog"],
-    files: [
-      {
-        path: "src/registry/default/ui/drawer.tsx",
         type: "registry:ui",
       },
     ],
@@ -239,47 +141,12 @@ const UI = [
     ],
   },
   {
-    name: "hover-card",
-    title: "Hover card",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-hover-card"],
-    files: [
-      {
-        path: "src/registry/default/ui/hover-card.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "image-card",
-    title: "Image card",
-    type: "registry:ui",
-    files: [
-      {
-        path: "src/registry/default/ui/image-card.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
     name: "input",
     title: "Input",
     type: "registry:ui",
     files: [
       {
         path: "src/registry/default/ui/input.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "input-otp",
-    title: "Input OTP",
-    type: "registry:ui",
-    dependencies: ["input-otp"],
-    files: [
-      {
-        path: "src/registry/default/ui/input-otp.tsx",
         type: "registry:ui",
       },
     ],
@@ -308,30 +175,6 @@ const UI = [
     ],
   },
   {
-    name: "menubar",
-    title: "Menubar",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-menubar"],
-    files: [
-      {
-        path: "src/registry/default/ui/menubar.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "navigation-menu",
-    title: "Navigation menu",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-navigation-menu"],
-    files: [
-      {
-        path: "src/registry/default/ui/navigation-menu.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
     name: "pagination",
     title: "Pagination",
     type: "registry:ui",
@@ -339,30 +182,6 @@ const UI = [
     files: [
       {
         path: "src/registry/default/ui/pagination.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "popover",
-    title: "Popover",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-popover"],
-    files: [
-      {
-        path: "src/registry/default/ui/popover.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "progress",
-    title: "Progress",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-progress"],
-    files: [
-      {
-        path: "src/registry/default/ui/progress.tsx",
         type: "registry:ui",
       },
     ],
@@ -380,30 +199,6 @@ const UI = [
     ],
   },
   {
-    name: "resizable",
-    title: "Resizable",
-    type: "registry:ui",
-    dependencies: ["react-resizable-panels"],
-    files: [
-      {
-        path: "src/registry/default/ui/resizable.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "scroll-area",
-    title: "Scroll area",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-scroll-area"],
-    files: [
-      {
-        path: "src/registry/default/ui/scroll-area.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
     name: "select",
     title: "Select",
     type: "registry:ui",
@@ -411,41 +206,6 @@ const UI = [
     files: [
       {
         path: "src/registry/default/ui/select.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "sheet",
-    title: "Sheet",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-dialog"],
-    files: [
-      {
-        path: "src/registry/default/ui/sheet.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "skeleton",
-    title: "Skeleton",
-    type: "registry:ui",
-    files: [
-      {
-        path: "src/registry/default/ui/skeleton.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "slider",
-    title: "Slider",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-slider"],
-    files: [
-      {
-        path: "src/registry/default/ui/slider.tsx",
         type: "registry:ui",
       },
     ],
@@ -493,29 +253,6 @@ const UI = [
     files: [
       {
         path: "src/registry/default/ui/tabs.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "textarea",
-    title: "Textarea",
-    type: "registry:ui",
-    files: [
-      {
-        path: "src/registry/default/ui/textarea.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "tooltip",
-    title: "Tooltip",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-tooltip"],
-    files: [
-      {
-        path: "src/registry/default/ui/tooltip.tsx",
         type: "registry:ui",
       },
     ],

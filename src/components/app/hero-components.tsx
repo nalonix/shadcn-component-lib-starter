@@ -3,21 +3,9 @@ import { ChevronsUpDown, Terminal } from "lucide-react"
 
 import * as React from "react"
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/registry/default/ui/accordion"
+
 import { Alert, AlertDescription, AlertTitle } from "@/registry/default/ui/alert"
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/registry/default/ui/breadcrumb"
+
 import { Button } from "@/registry/default/ui/button"
 import {
   Card,
@@ -27,35 +15,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/registry/default/ui/card"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/registry/default/ui/carousel"
+
 import { Checkbox } from "@/registry/default/ui/checkbox"
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/registry/default/ui/collapsible"
+
 import { Input } from "@/registry/default/ui/input"
-import {
-  InputOTP,
-  InputOTPGroup,
-  InputOTPSeparator,
-  InputOTPSlot,
-} from "@/registry/default/ui/input-otp"
+
 import { Label } from "@/registry/default/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/registry/default/ui/radio-group"
-import {
-  ResizableHandle,
-  ResizablePanel,
-  ResizablePanelGroup,
-} from "@/registry/default/ui/resizable"
-import { ScrollArea } from "@/registry/default/ui/scroll-area"
-import { Slider } from "@/registry/default/ui/slider"
+
 
 import { cn } from "@/lib/utils"
 
@@ -78,59 +45,6 @@ export default function HeroComponents({
   )
 }
 
-const CardExample = () => (
-  <Card className="w-full bg-main text-main-foreground max-w-sm">
-    <CardHeader>
-      <CardTitle>Login to your account</CardTitle>
-      <CardDescription>
-        Enter your email below to login to your account
-      </CardDescription>
-    </CardHeader>
-    <CardContent>
-      <form>
-        <div className="flex flex-col gap-6">
-          <div className="grid gap-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="m@example.com"
-              required
-              tabIndex={-1}
-            />
-          </div>
-          <div className="grid gap-2">
-            <div className="flex items-center">
-              <Label htmlFor="password">Password</Label>
-              <a
-                href="#"
-                className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
-                tabIndex={-1}
-              >
-                Forgot your password?
-              </a>
-            </div>
-            <Input id="password" type="password" required tabIndex={-1} />
-          </div>
-        </div>
-      </form>
-    </CardContent>
-    <CardFooter className="flex-col gap-2">
-      <Button variant="neutral" type="submit" className="w-full" tabIndex={-1}>
-        Login
-      </Button>
-      <Button className="w-full" tabIndex={-1}>
-        Login with Google
-      </Button>
-      <div className="mt-4 text-center text-sm">
-        Don&apos;t have an account?{" "}
-        <a href="#" className="underline underline-offset-4" tabIndex={-1}>
-          Sign up
-        </a>
-      </div>
-    </CardFooter>
-  </Card>
-)
 
 const AlertExample = () => (
   <Alert>
@@ -142,113 +56,6 @@ const AlertExample = () => (
   </Alert>
 )
 
-const AccordionExample = () => (
-  <Accordion className="w-full" type="single" collapsible>
-    <AccordionItem className="max-w-full" value="item-1">
-      <AccordionTrigger tabIndex={-1}>Is it accessible?</AccordionTrigger>
-      <AccordionContent>
-        Yes. It adheres to the WAI-ARIA design pattern.
-      </AccordionContent>
-    </AccordionItem>
-  </Accordion>
-)
-
-const InputOTPExample = () => (
-  <div className="bg-main w-full flex-col border-2 border-border shadow-shadow py-4 flex items-center justify-center rounded-base">
-    <p className="mb-4 text-lg text-main-foreground font-heading">
-      Your OTP code is:
-    </p>
-
-    <InputOTP inert maxLength={6}>
-      <InputOTPGroup>
-        {[0, 1, 2].map((index) => (
-          <InputOTPSlot key={index} index={index} tabIndex={-1} />
-        ))}
-      </InputOTPGroup>
-      <InputOTPSeparator />
-      <InputOTPGroup>
-        {[3, 4, 5].map((index) => (
-          <InputOTPSlot key={index} index={index} tabIndex={-1} />
-        ))}
-      </InputOTPGroup>
-    </InputOTP>
-  </div>
-)
-
-const ResizableExample = () => (
-  <ResizablePanelGroup
-    direction="horizontal"
-    inert
-    className="rounded-base max-w-md max-h-[200px] min-h-[200px] border-2 border-border text-main-foreground shadow-shadow"
-  >
-    <ResizablePanel tabIndex={-1} defaultSize={50}>
-      <div className="flex h-full items-center justify-center bg-main p-6">
-        <span className="font-base">One</span>
-      </div>
-    </ResizablePanel>
-    <ResizableHandle />
-    <ResizablePanel tabIndex={-1} defaultSize={50}>
-      <ResizablePanelGroup direction="vertical">
-        <ResizablePanel tabIndex={-1} defaultSize={25}>
-          <div className="flex h-full items-center justify-center bg-main p-6">
-            <span className="font-base">Two</span>
-          </div>
-        </ResizablePanel>
-        <ResizableHandle />
-        <ResizablePanel tabIndex={-1} defaultSize={75}>
-          <div className="flex h-full items-center justify-center bg-main p-6">
-            <span className="font-base">Three</span>
-          </div>
-        </ResizablePanel>
-      </ResizablePanelGroup>
-    </ResizablePanel>
-  </ResizablePanelGroup>
-)
-
-const ScrollAreaExample = () => (
-  <ScrollArea
-    tabIndex={-1}
-    inert
-    className="rounded-base h-[150px] w-full text-main-foreground border-2 border-border bg-main p-4 shadow-shadow"
-  >
-    Jokester began sneaking into the castle in the middle of the night and
-    leaving jokes all over the place: under the king&apos;s pillow, in his soup,
-    even in the royal toilet. The king was furious, but he couldn&apos;t seem to
-    stop Jokester. And then, one day, the people of the kingdom discovered that
-    the jokes left by Jokester were so funny that they couldn&apos;t help but
-    laugh. And once they started laughing, they couldn&apos;t stop.
-  </ScrollArea>
-)
-
-const SliderExample = () => (
-  <div className="bg-main w-full border-2 border-border shadow-shadow p-4 py-6 flex items-center justify-center rounded-base">
-    <Slider defaultValue={[33]} max={100} step={1} tabIndex={-1} inert />
-  </div>
-)
-
-const BreadcrumbExample = () => (
-  <div className="bg-main w-full border-2 border-border shadow-shadow p-4 flex items-center justify-center rounded-base">
-    <Breadcrumb>
-      <BreadcrumbList className="gap-1 sm:gap-1 text-main-foreground">
-        <BreadcrumbItem>
-          <BreadcrumbLink tabIndex={-1} href="/">
-            Home
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbSeparator />
-        <BreadcrumbItem>
-          <BreadcrumbLink tabIndex={-1} href="/shadcn/components/button">
-            Components
-          </BreadcrumbLink>
-        </BreadcrumbItem>
-        <BreadcrumbSeparator />
-        <BreadcrumbItem>
-          <BreadcrumbPage tabIndex={-1}>Button</BreadcrumbPage>
-        </BreadcrumbItem>
-      </BreadcrumbList>
-    </Breadcrumb>
-  </div>
-)
 
 const RadioGroupExample = () => (
   <div className="bg-main w-full border-2 border-border shadow-shadow p-4 flex items-center justify-center rounded-base">
@@ -299,54 +106,3 @@ const CheckboxExample = () => (
   </div>
 )
 
-const CarouselExample = () => (
-  <div className="w-full flex-col items-center gap-4 flex">
-    <Carousel className="w-full max-w-[200px]">
-      <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index}>
-            <div className="p-[10px]">
-              <Card className="shadow-none p-0 bg-main text-main-foreground">
-                <CardContent className="flex aspect-square items-center justify-center p-4">
-                  <span className="text-3xl font-base">{index + 1}</span>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious tabIndex={-1} />
-      <CarouselNext tabIndex={-1} />
-    </Carousel>
-  </div>
-)
-
-const CollapsibleExample = () => (
-  <Collapsible className="w-full space-y-2">
-    <div className="rounded-base flex items-center justify-between space-x-4 border-2 border-border text-main-foreground bg-main px-4 py-2">
-      <h4 className="text-sm font-heading">@peduarte starred 3 repositories</h4>
-      <CollapsibleTrigger asChild>
-        <Button
-          variant="noShadow"
-          size="sm"
-          className="w-9 bg-secondary-background text-foreground p-0"
-          tabIndex={-1}
-        >
-          <ChevronsUpDown className="size-4" />
-          <span className="sr-only">Toggle</span>
-        </Button>
-      </CollapsibleTrigger>
-    </div>
-    <div className="rounded-base border-2 border-border bg-main px-4 py-3 font-mono font-base text-main-foreground text-sm">
-      @radix-ui/primitives
-    </div>
-    <CollapsibleContent className="space-y-2 text-main-foreground font-base">
-      <div className="rounded-base border-2 border-border bg-main px-4 py-3 font-mono text-sm">
-        @radix-ui/colors
-      </div>
-      <div className="rounded-base border-2 border-border bg-main px-4 py-3 font-mono text-sm">
-        @stitches/react
-      </div>
-    </CollapsibleContent>
-  </Collapsible>
-)

@@ -12,34 +12,23 @@ import {
 import { Input } from "@/registry/default/ui/input"
 import { Label } from "@/registry/default/ui/label"
 
-import AccordionDemo from "./demos/accordion"
 import CardDemo2 from "./demos/card-2"
 import CardDemo3 from "./demos/card-3"
-import CarouselDemo from "./demos/carousel"
-import CollapsibleDemo from "./demos/collapsible"
 import CommandDemo from "./demos/command"
 import ImageCardDemo from "./demos/image-card"
-import ResizableDemo from "./demos/resizable"
-import ScrollAreaDemo from "./demos/scroll-area"
 
 export default function ExampleComponents() {
   return (
     <div className="w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-10 gap-5 not-prose">
       <div className="flex flex-col gap-5">
-        <CollapsibleDemo />
-        <AccordionDemo />
-        <CarouselDemo />
         <AlertDemo />
         <CardDemo2 />
       </div>
       <div className="lg:flex hidden flex-col gap-5">
-        <ScrollAreaDemo />
-        <AlertDemo />
         <CardDemo3 />
         <ImageCardDemo />
       </div>
       <div className="sm:flex hidden flex-col gap-5">
-        <ResizableDemo />
         <CommandDemo />
         <CardDemo />
       </div>
@@ -92,7 +81,7 @@ const CardDemo = () => {
         <Button type="submit" className="w-full">
           Login
         </Button>
-        <Button variant="neutral" className="w-full">
+        <Button variant="outline" className="w-full">
           Login with Google
         </Button>
         <div className="mt-4 text-center text-sm">
