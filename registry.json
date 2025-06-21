@@ -87,24 +87,11 @@
         "cmdk"
       ],
       "registryDependencies": [
-        "undefined/r/ndialog.json"
+        "${BASE_URL}/r/dialog.json"
       ],
       "files": [
         {
           "path": "src/registry/default/ui/command.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "ndialog",
-      "type": "registry:ui",
-      "dependencies": [
-        "@radix-ui/react-dialog"
-      ],
-      "files": [
-        {
-          "path": "src/registry/default/ui/dialog.tsx",
           "type": "registry:ui"
         }
       ]
@@ -149,8 +136,8 @@
         "react-hook-form"
       ],
       "registryDependencies": [
-        "${BASE_URL}/r/nbutton.json",
-        "${BASE_URL}/r/nlabel.json"
+        "${BASE_URL}/r/button.json",
+        "${BASE_URL}/r/label.json"
       ],
       "files": [
         {
@@ -171,7 +158,7 @@
       ]
     },
     {
-      "name": "nlabel",
+      "name": "label",
       "type": "registry:ui",
       "dependencies": [
         "@radix-ui/react-label"
@@ -202,7 +189,7 @@
       "title": "Pagination",
       "type": "registry:ui",
       "registryDependencies": [
-        "${BASE_URL}/r/nbutton.json"
+        "${BASE_URL}/r/button.json"
       ],
       "files": [
         {

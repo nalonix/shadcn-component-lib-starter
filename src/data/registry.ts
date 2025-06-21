@@ -75,21 +75,10 @@ const UI = [
     title: "Command",
     type: "registry:ui",
     dependencies: ["cmdk"],
-    registryDependencies: [`${BASE_URL}/r/ndialog.json`],
+    registryDependencies: [`${BASE_URL}/r/dialog.json`],
     files: [
       {
         path: "src/registry/default/ui/command.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "ndialog",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-dialog"],
-    files: [
-      {
-        path: "src/registry/default/ui/dialog.tsx",
         type: "registry:ui",
       },
     ],
@@ -130,8 +119,8 @@ const UI = [
       "react-hook-form",
     ],
     registryDependencies: [
-      "${BASE_URL}/r/nbutton.json",
-      "${BASE_URL}/r/nlabel.json",
+      "${BASE_URL}/r/button.json",
+      "${BASE_URL}/r/label.json",
     ],
     files: [
       {
@@ -152,17 +141,6 @@ const UI = [
     ],
   },
   {
-    name: "nlabel",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-label"],
-    files: [
-      {
-        path: "src/registry/default/ui/label.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
     name: "label",
     title: "Label",
     type: "registry:ui",
@@ -178,7 +156,7 @@ const UI = [
     name: "pagination",
     title: "Pagination",
     type: "registry:ui",
-    registryDependencies: ["${BASE_URL}/r/nbutton.json"],
+    registryDependencies: ["${BASE_URL}/r/button.json"],
     files: [
       {
         path: "src/registry/default/ui/pagination.tsx",
