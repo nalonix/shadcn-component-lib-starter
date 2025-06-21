@@ -49,7 +49,6 @@ import SonnerInfoDemo from "@/examples/ui/sonner/info"
 import SonnerPromiseDemo from "@/examples/ui/sonner/promise"
 import SonnerSuccessDemo from "@/examples/ui/sonner/success"
 import SonnerWarningDemo from "@/examples/ui/sonner/warning"
-import SwitchDemo from "@/examples/ui/switch"
 import TableDemo from "@/examples/ui/table"
 import TabsDemo from "@/examples/ui/tabs"
 
@@ -184,10 +183,6 @@ const COMPONENTS: Component[] = [
       cancel: SonnerCancelDemo,
       promise: SonnerPromiseDemo,
     },
-  },
-  {
-    name: "Switch",
-    exampleComponent: SwitchDemo,
   },
   {
     name: "Table",

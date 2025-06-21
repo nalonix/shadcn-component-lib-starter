@@ -9,7 +9,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/registry/default/ui/card"
-import { Switch } from "@/registry/default/ui/switch"
 
 import { cn } from "@/lib/utils"
 
@@ -40,16 +39,6 @@ export default function CardDemo({ className, ...props }: CardProps) {
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
-        <div className=" flex items-center space-x-4 rounded-base border-2 bg-secondary-background border-border p-4">
-          <BellRing />
-          <div className="flex-1 space-y-1">
-            <p className="text-sm font-heading leading-none">
-              Push Notifications
-            </p>
-            <p className="text-sm">Send notifications to device.</p>
-          </div>
-          <Switch />
-        </div>
         <div>
           {notifications.map((notification, index) => (
             <div

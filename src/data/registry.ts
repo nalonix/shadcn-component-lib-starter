@@ -223,18 +223,6 @@ const UI = [
     ],
   },
   {
-    name: "switch",
-    title: "Switch",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-switch"],
-    files: [
-      {
-        path: "src/registry/default/ui/switch.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
     name: "table",
     title: "Table",
     type: "registry:ui",

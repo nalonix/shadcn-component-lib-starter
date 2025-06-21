@@ -15,7 +15,6 @@ import { Label } from "@/registry/default/ui/label"
 import CardDemo2 from "./demos/card-2"
 import CardDemo3 from "./demos/card-3"
 import CommandDemo from "./demos/command"
-import ImageCardDemo from "./demos/image-card"
 
 export default function ExampleComponents() {
   return (
@@ -26,7 +25,6 @@ export default function ExampleComponents() {
       </div>
       <div className="lg:flex hidden flex-col gap-5">
         <CardDemo3 />
-        <ImageCardDemo />
       </div>
       <div className="sm:flex hidden flex-col gap-5">
         <CommandDemo />

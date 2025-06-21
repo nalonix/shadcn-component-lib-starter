@@ -60,7 +60,7 @@ export default function CardDemo3() {
         </form>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button variant="neutral">Cancel</Button>
+        <Button variant="destructive">Cancel</Button>
         <Button>Deploy</Button>
       </CardFooter>
     </Card>
