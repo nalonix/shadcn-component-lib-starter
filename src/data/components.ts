@@ -36,7 +36,6 @@ import InputWithButtonDemo from "@/examples/ui/input/with-button"
 import InputWithLabelDemo from "@/examples/ui/input/with-label"
 import LabelDemo from "@/examples/ui/label"
 import PaginationDemo from "@/examples/ui/pagination"
-import RadioGroupDemo from "@/examples/ui/radio-group"
 import SelectDemo from "@/examples/ui/select"
 import SelectDisabledDemo from "@/examples/ui/select/disabled"
 import SelectLargeListDemo from "@/examples/ui/select/large-list"
@@ -155,10 +154,6 @@ const COMPONENTS: Component[] = [
   {
     name: "Pagination",
     exampleComponent: PaginationDemo,
-  },
-  {
-    name: "Radio Group",
-    exampleComponent: RadioGroupDemo,
   },
   {
     name: "Select",

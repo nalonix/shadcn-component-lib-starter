@@ -212,20 +212,6 @@
       ]
     },
     {
-      "name": "radio-group",
-      "title": "Radio group",
-      "type": "registry:ui",
-      "dependencies": [
-        "@radix-ui/react-radio-group"
-      ],
-      "files": [
-        {
-          "path": "src/registry/default/ui/radio-group.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
       "name": "select",
       "title": "Select",
       "type": "registry:ui",
@@ -255,20 +241,6 @@
       ]
     },
     {
-      "name": "switch",
-      "title": "Switch",
-      "type": "registry:ui",
-      "dependencies": [
-        "@radix-ui/react-switch"
-      ],
-      "files": [
-        {
-          "path": "src/registry/default/ui/switch.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
       "name": "table",
       "title": "Table",
       "type": "registry:ui",
@@ -289,20 +261,6 @@
       "files": [
         {
           "path": "src/registry/default/ui/tabs.tsx",
-          "type": "registry:ui"
-        }
-      ]
-    },
-    {
-      "name": "tooltip",
-      "title": "Tooltip",
-      "type": "registry:ui",
-      "dependencies": [
-        "@radix-ui/react-tooltip"
-      ],
-      "files": [
-        {
-          "path": "src/registry/default/ui/tooltip.tsx",
           "type": "registry:ui"
         }
       ]

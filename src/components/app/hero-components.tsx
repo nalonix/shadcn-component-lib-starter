@@ -21,7 +21,6 @@ import { Checkbox } from "@/registry/default/ui/checkbox"
 import { Input } from "@/registry/default/ui/input"
 
 import { Label } from "@/registry/default/ui/label"
-import { RadioGroup, RadioGroupItem } from "@/registry/default/ui/radio-group"
 
 
 import { cn } from "@/lib/utils"
@@ -56,46 +55,6 @@ const AlertExample = () => (
   </Alert>
 )
 
-
-const RadioGroupExample = () => (
-  <div className="bg-main w-full border-2 border-border shadow-shadow p-4 flex items-center justify-center rounded-base">
-    <RadioGroup defaultValue="comfortable" inert>
-      <div className="flex items-center space-x-2">
-        <RadioGroupItem
-          tabIndex={-1}
-          className="dark:text-main-foreground"
-          value="default"
-          id="r1"
-        />
-        <Label className="text-main-foreground" htmlFor="r1">
-          Default
-        </Label>
-      </div>
-      <div className="flex items-center space-x-2">
-        <RadioGroupItem
-          tabIndex={-1}
-          className="dark:text-main-foreground"
-          value="comfortable"
-          id="r2"
-        />
-        <Label className="text-main-foreground" htmlFor="r2">
-          Comfortable
-        </Label>
-      </div>
-      <div className="flex items-center space-x-2">
-        <RadioGroupItem
-          tabIndex={-1}
-          className="dark:text-main-foreground"
-          value="compact"
-          id="r3"
-        />
-        <Label className="text-main-foreground" htmlFor="r3">
-          Compact
-        </Label>
-      </div>
-    </RadioGroup>
-  </div>
-)
 
 const CheckboxExample = () => (
   <div className="bg-main w-full border-2 border-border shadow-shadow p-4 flex text-main-foreground items-center justify-center rounded-base">

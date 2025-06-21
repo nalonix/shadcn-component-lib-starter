@@ -187,18 +187,6 @@ const UI = [
     ],
   },
   {
-    name: "radio-group",
-    title: "Radio group",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-radio-group"],
-    files: [
-      {
-        path: "src/registry/default/ui/radio-group.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
     name: "select",
     title: "Select",
     type: "registry:ui",

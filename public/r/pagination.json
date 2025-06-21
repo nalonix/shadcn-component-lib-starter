@@ -4,7 +4,7 @@
   "type": "registry:ui",
   "title": "Pagination",
   "registryDependencies": [
-    "${BASE_URL}/r/nbutton.json"
+    "${BASE_URL}/r/button.json"
   ],
   "files": [
     {

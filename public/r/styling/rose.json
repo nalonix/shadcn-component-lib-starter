@@ -12,7 +12,6 @@
       "foreground": "oklch(92.49% 0 0)",
       "main-foreground": "oklch(0% 0 0)",
       "border": "oklch(0% 0 0)",
-      "overlay": "rgba(0, 0, 0, 0.8)",
       "shadow": "4px 4px 0px 0px var(--border)"
     },
     "light": {
@@ -23,7 +22,6 @@
       "foreground": "oklch(0% 0 0)",
       "main-foreground": "oklch(0% 0 0)",
       "border": "oklch(0% 0 0)",
-      "overlay": "rgba(0, 0, 0, 0.8)",
       "shadow": "4px 4px 0px 0px var(--border)"
     },
     "theme": {
@@ -34,7 +32,6 @@
       "color-main-foreground": "var(--main-foreground)",
       "color-border": "var(--border)",
       "color-ring": "var(--ring)",
-      "color-overlay": "var(--overlay)",
       "spacing-boxShadowX": "4px",
       "spacing-boxShadowY": "4px",
       "spacing-reverseBoxShadowX": "-4px",
