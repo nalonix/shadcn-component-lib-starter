@@ -24,18 +24,6 @@ const UI = [
     ],
   },
   {
-    name: "mybutton",
-    title: "MyButton",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-slot"],
-    files: [
-      {
-        path: "src/registry/default/ui/mybutton.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
     name: "button",
     title: "Button",
     type: "registry:ui",

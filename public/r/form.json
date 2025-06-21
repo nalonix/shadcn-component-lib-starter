@@ -11,8 +11,8 @@
     "react-hook-form"
   ],
   "registryDependencies": [
-    "${BASE_URL}/r/nbutton.json",
-    "${BASE_URL}/r/nlabel.json"
+    "button",
+    "label"
   ],
   "files": [
     {
