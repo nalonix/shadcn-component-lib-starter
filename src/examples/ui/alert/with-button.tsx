@@ -12,7 +12,6 @@ export default function AlertLongDescriptionDemo() {
       </AlertTitle>
       <Button
         size="sm"
-        variant="noShadow"
         className="absolute top-2.5 right-3 h-6 bg-secondary-background text-foreground"
       >
         Undo
