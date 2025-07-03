@@ -203,7 +203,7 @@ export default function Styling() {
                     <SelectItem key={name} value={name}>
                       <div className="flex items-center gap-2">
                         <div
-                          className="size-4 rounded-full border-2 border-border"
+                          className="size-4 rounded-full border-2 border"
                           style={{ backgroundColor: main }}
                         />
                         {name}

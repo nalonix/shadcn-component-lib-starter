@@ -57,7 +57,7 @@ const AlertExample = () => (
 
 
 const CheckboxExample = () => (
-  <div className="bg-main w-full border-2 border-border shadow-shadow p-4 flex text-main-foreground items-center justify-center rounded-base">
+  <div className="bg-main w-full border-2 border shadow-shadow p-4 flex text-main-foreground items-center justify-center rounded-base">
     <div className="flex items-center space-x-2">
       <Checkbox id="terms" tabIndex={-1} />
       <Label htmlFor="terms">Accept terms and conditions</Label>

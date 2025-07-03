@@ -32,7 +32,7 @@ async function Navbar() {
   // const starsCount = (repo.stargazers_count / 1000).toFixed(1) + "k"
 
   return (
-    <nav className="fixed left-0 top-0 z-20 mx-auto flex h-[70px] w-full items-center border-b-1 border-border/50 bg-background px-5">
+    <nav className="fixed left-0 top-0 z-20 mx-auto flex h-[70px] w-full items-center border-b-1 border/50 bg-background px-5">
       <div className="mx-auto flex w-[1300px] text-foreground max-w-full items-center justify-between">
         <div className="flex items-center xl:gap-10 gap-10">
           <Link
@@ -67,7 +67,7 @@ async function Navbar() {
             <a
               target="_blank"
               href="https://github.com/nalonix/component-lib-starter"
-              className="flex gap-2 items-center justify-center rounded-base border-2 border-border shadow-nav dark:shadow-navDark dark:border-darkBorder px-1.5 h-9 transition-all hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none dark:hover:shadow-none"
+              className="flex gap-2 items-center justify-center rounded-base border-2 border shadow-nav dark:shadow-navDark dark:border-darkBorder px-1.5 h-9 transition-all hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none dark:hover:shadow-none"
             >
               {/* <p className="font-semibold sm:inline hidden">{starsCount}</p> */}
               <svg
@@ -85,7 +85,7 @@ async function Navbar() {
               <a
                 target="_blank"
                 href="https://twitter.com/samuelbreznjak"
-                className="flex items-center justify-center rounded-base border-2 border-border shadow-nav dark:shadow-navDark dark:border-darkBorder size-9 transition-all hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none dark:hover:shadow-none"
+                className="flex items-center justify-center rounded-base border-2 border shadow-nav dark:shadow-navDark dark:border-darkBorder size-9 transition-all hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-none dark:hover:shadow-none"
               >
                 <svg
                   className="size-5"

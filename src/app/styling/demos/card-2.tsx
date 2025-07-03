@@ -45,7 +45,7 @@ export default function CardDemo({ className, ...props }: CardProps) {
               key={index}
               className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0"
             >
-              <span className="flex h-3 w-3 translate-y-1 rounded-full bg-main border-2 border-border" />
+              <span className="flex h-3 w-3 translate-y-1 rounded-full bg-main border-2 border" />
               <div className="space-y-1">
                 <p className="text-sm font-heading leading-none">
                   {notification.title}

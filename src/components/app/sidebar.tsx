@@ -19,7 +19,7 @@ export default function Sidebar() {
   const sidebarLinks = getSidebarLinks()
 
   return (
-    <aside className="scrollbar hidden-scrollbar fixed top-[70px] bg-secondary-background p-4 h-[calc(100svh-70px)] max-h-[calc(100svh-70px)] w-[300px] overflow-y-auto border-r-1 lg:block hidden border-border/50 lg:block">
+    <aside className="scrollbar hidden-scrollbar fixed top-[70px] bg-secondary-background p-4 h-[calc(100svh-70px)] max-h-[calc(100svh-70px)] w-[300px] overflow-y-auto border-r-1 lg:block hidden border/50 lg:block">
       {sidebarLinks.map((item, id) => {
         return typeof item === "string" ? (
           <div
