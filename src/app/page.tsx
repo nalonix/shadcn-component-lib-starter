@@ -1,4 +1,5 @@
 import Navbar from "@/components/app/navbar"
+import { Button } from "@/registry/default/ui/button"
 import { ArrowUpRight } from "lucide-react"
 
 import Link from "next/link"
@@ -11,25 +12,32 @@ export default function Home() {
         <div className="mx-auto w-container max-w-full">
           <div className="flex flex-col items-center text-center">
             <h1 className="leading-normal max-w-2xl">
-              Get started with creating your component liabrary.
+              Jumpstart your component library.
             </h1>
 
             <p className="leading-snug w-full md:mt-[50px] md:mb-[60px] sm:mt-12 my-9 sm:mb-10 2xl:text-3xl xl:text-2xl lg:text-2xl xl:w-full lg:w-2/3 md:w-full md:text-2xl sm:text-xl text-xl">
-              Create a collection of pre-styled components based on shadcn/ui.
+              Quickly create a collection of pre-styled, customizable components built on Shadcn/UI.
             </p>
 
-            <Link
-              className="flex items-center gap-2.5 w-max text-main-foreground rounded-base border-2 border-border bg-main md:px-10 px-4 md:py-3 py-2 md:text-[22px] text-base shadow-shadow transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none"
-              href={"/docs"}
+            
+            <Button
+              variant="outline"
+              size={"lg"}
+              className="text-2xl"
+              asChild
             >
-              Read the docs
-              <ArrowUpRight className="md:size-[30px] size-5" />
-            </Link>
+              <Link
+                href="/docs"
+              >
+                Get started
+                <ArrowUpRight className="md:size-[30px] size-5" />
+              </Link>
+            </Button>
           </div>
         </div>
       </main>
       <div>
-        <section className="flex flex-col items-center justify-center py-8 border-y-4 border-border bg-background">
+        <section className="flex flex-col items-center justify-center py-8 border bg-background">
           <h2 className="mb-5 px-5 text-center">
             Customizable set of components.
           </h2>

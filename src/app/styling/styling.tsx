@@ -151,7 +151,6 @@ export default function Styling() {
 
 :root {
   --background: ${bg};
-  --secondary-background: oklch(100% 0 0);
   --foreground: oklch(0% 0 0);
   --main-foreground: oklch(0% 0 0);
   --main: ${main};
@@ -162,7 +161,6 @@ export default function Styling() {
 
 .dark {
   --background: ${darkBg};
-  --secondary-background: oklch(23.93% 0 0);
   --foreground: oklch(92.49% 0 0);
   --main-foreground: oklch(0% 0 0);
   --main: ${darkMain};
@@ -172,9 +170,7 @@ export default function Styling() {
 }
 
 @theme inline {
-  --color-main: var(--main);
   --color-background: var(--background);
-  --color-secondary-background: var(--secondary-background);
   --color-foreground: var(--foreground);
   --color-main-foreground: var(--main-foreground);
   --color-border: var(--border);

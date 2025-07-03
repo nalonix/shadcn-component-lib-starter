@@ -8,6 +8,8 @@ import ScrollToTop from "@/components/app/scroll-to-top"
 import SetStylingPref from "@/components/app/set-styling-pref"
 import { ThemeProvider } from "@/components/app/theme-provider"
 import { Toaster } from "@/registry/default/ui/sonner"
+import { Button } from "@/registry/default/ui/button"
+import Link from "next/link"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -54,12 +56,15 @@ export const metadata: Metadata = {
   },
 }
 
+
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
+    <>
     <html className="scroll-smooth" suppressHydrationWarning lang="en">
       <body className={dmSans.className}>
         <ThemeProvider
@@ -68,11 +73,13 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          {/* <SetStylingPref /> */}
           <ScrollToTop />
           <Toaster />
         </ThemeProvider>
       </body>
     </html>
+    </>
   )
 }
+
+{/* <SetStylingPref /> */}
