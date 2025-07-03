@@ -57,9 +57,7 @@ const invoices = [
 export default function TableDemo() {
   return (
     <Table>
-      <TableCaption className="text-foreground">
-        A list of your recent invoices.
-      </TableCaption>
+      <TableCaption>A list of your recent invoices.</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead className="w-[100px]">Invoice</TableHead>
@@ -71,7 +69,7 @@ export default function TableDemo() {
       <TableBody>
         {invoices.map((invoice) => (
           <TableRow key={invoice.invoice}>
-            <TableCell className="font-base">{invoice.invoice}</TableCell>
+            <TableCell className="font-medium">{invoice.invoice}</TableCell>
             <TableCell>{invoice.paymentStatus}</TableCell>
             <TableCell>{invoice.paymentMethod}</TableCell>
             <TableCell className="text-right">{invoice.totalAmount}</TableCell>

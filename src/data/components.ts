@@ -22,20 +22,15 @@ import CommandDemo from "@/examples/ui/command"
 import CommandDialogDemo from "@/examples/ui/command/dialog"
 import DataTableDemo from "@/examples/ui/data-table"
 import DialogDemo from "@/examples/ui/dialog"
-import DialogWithScrollableContent from "@/examples/ui/dialog/scrollable-content"
-import DialogWithStickyFooter from "@/examples/ui/dialog/sticky-footer"
 import DropdownMenuDemo from "@/examples/ui/dropdown-menu"
 import DropdownMenuCheckboxes from "@/examples/ui/dropdown-menu/checkboxes"
 import DropdownMenuRadioGroupDemo from "@/examples/ui/dropdown-menu/radio"
-import FormDemo from "@/examples/ui/form"
-import ImageCardDemo from "@/examples/ui/image-card"
 import InputDemo from "@/examples/ui/input"
 import InputDisabledDemo from "@/examples/ui/input/disabled"
 import InputFileDemo from "@/examples/ui/input/file"
 import InputWithButtonDemo from "@/examples/ui/input/with-button"
 import InputWithLabelDemo from "@/examples/ui/input/with-label"
 import LabelDemo from "@/examples/ui/label"
-import PaginationDemo from "@/examples/ui/pagination"
 import SelectDemo from "@/examples/ui/select"
 import SelectDisabledDemo from "@/examples/ui/select/disabled"
 import SelectLargeListDemo from "@/examples/ui/select/large-list"
@@ -117,11 +112,6 @@ const COMPONENTS: Component[] = [
   {
     name: "Dialog",
     exampleComponent: DialogDemo,
-    examples: {
-      default: DialogDemo,
-      "scrollable-content": DialogWithScrollableContent,
-      "sticky-footer": DialogWithStickyFooter,
-    },
   },
   {
     name: "Dropdown Menu",
@@ -131,10 +121,6 @@ const COMPONENTS: Component[] = [
       checkboxes: DropdownMenuCheckboxes,
       radio: DropdownMenuRadioGroupDemo,
     },
-  },
-  {
-    name: "Form",
-    exampleComponent: FormDemo,
   },
   {
     name: "Input",
@@ -150,10 +136,6 @@ const COMPONENTS: Component[] = [
   {
     name: "Label",
     exampleComponent: LabelDemo,
-  },
-  {
-    name: "Pagination",
-    exampleComponent: PaginationDemo,
   },
   {
     name: "Select",

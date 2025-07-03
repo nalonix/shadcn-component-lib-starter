@@ -1,11 +1,11 @@
 import { Button } from "@/registry/default/ui/button"
 import { Input } from "@/registry/default/ui/input"
 
-export default function InputWithButtonDemo() {
+export default function InputWithButton() {
   return (
-    <div className="flex w-full max-w-sm items-center space-x-2">
+    <div className="flex w-full max-w-sm items-center gap-2">
       <Input type="email" placeholder="Email" />
-      <Button variant="noShadow" type="submit">
+      <Button type="submit" variant="outline">
         Subscribe
       </Button>
     </div>

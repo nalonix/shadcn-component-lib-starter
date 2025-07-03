@@ -1,3 +1,4 @@
+import ActionSearchDemo from "@/examples/blocks/action-search"
 import PokemonsDemo from "@/examples/blocks/pokemons"
 
 type Block = {
@@ -17,6 +18,15 @@ const BLOCKS: Block[] = [
     previewComponent: PokemonsDemo,
     createdAt: "4-14-2024",
     updatedAt: "4-14-2025",
+    status: "experimental",
+    notShadcn: true,
+  },
+  {
+    name: "action search",
+    description: "A list of pokemons",
+    previewComponent: ActionSearchDemo,
+    createdAt: "7-2-2025",
+    updatedAt: "7-3-2025",
     status: "experimental",
     notShadcn: true,
   },
