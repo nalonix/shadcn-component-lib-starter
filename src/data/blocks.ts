@@ -23,11 +23,11 @@ const BLOCKS: Block[] = [
   },
   {
     name: "action search",
-    description: "A list of pokemons",
+    description: "Action Bar with shortcuts, and smooth dropdown animation.",
     previewComponent: ActionSearchDemo,
     createdAt: "7-2-2025",
     updatedAt: "7-3-2025",
-    status: "experimental",
+    status: "stable",
     notShadcn: true,
   },
 ]

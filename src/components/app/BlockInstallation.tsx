@@ -14,17 +14,9 @@ interface BlockInstallationProps {
 const BlockInstallation: React.FC<BlockInstallationProps> = ({ block, children }) => {
   
   return (
-    <Tabs defaultValue="cli" className="w-full">
-      <TabsList className="grid w-full grid-cols-2 border-b-0">
-        <TabsTrigger value="cli">
-          Shadcn CLI
-        </TabsTrigger>
-      </TabsList>
-      
-      <TabsContent value="cli">
-        <ShadcnCliCommand component={block} />
-      </TabsContent>
-    </Tabs>
+    <div>
+      <ShadcnCliCommand component={block} />
+    </div>
   )
 }
 

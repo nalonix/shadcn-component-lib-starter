@@ -111,9 +111,6 @@ export const sharedComponents = {
     }else if(type == "block"){
       return  (
       <div>
-        <div className="p-2.5 text-lg font-bold bg-secondary-background shadow-shadow border-2 border">
-            Shadcn CLI
-        </div>
         <ShadcnCliCommand component={component} />
       </div>)
     }
